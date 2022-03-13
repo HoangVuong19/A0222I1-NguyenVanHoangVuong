@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form cơ bản</title>
+    <style>
+        #vien {
+            border-width: 10px 20px;
+            border-style: solid;
+            border-color: aqua;
+            width: 400px;
+            height: 180px;
+        }
+        #tieu_de {
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            margin: 2px 1px;
+        }
+        .color {
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+<div id="vien">
+    <form action="">
+        <p id="tieu_de">SỞ THÍCH CỦA BẠN</p>
+        <table>
+            <tr>
+                <td style="color: blue">Họ và tên</td>
+                <td><input type="text" name="yourname" size="20"></td>
+            </tr>
+            <tr>
+                <td style="text-align: right; color: blue">Email</td>
+                <td><input type="text" name="email" size="15"></td>
+            </tr>
+            <table>
+                <tr>
+                    <td style="color: blue">Sở thích</td>
+                    <td class="color"><input type="checkbox" name="hobby">Thể thao</td>
+                    <td class="color"><input type="checkbox" name="hobby">Âm nhạc</td>
+                    <td class="color"><input type="checkbox" name="hobby">Đọc sách</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="color"><input type="checkbox" name="hobby">Lướt web</td>
+                    <td class="color"><input type="checkbox" name="hobby">Chơi game</td>
+                    <td class="color"><input type="checkbox" name="hobby">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="color"><input type="checkbox" name="hobby">Du lịch</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Gửi thông tin"></td>
+                    <td><input type="reset" value="Nhập lại"></td>
+                </tr>
+            </table>
+        </table>
+    </form>
+</div>
+</body>
+</html>
