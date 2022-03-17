@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            text-align: center;
+            border-spacing: 35px 2px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <th>Amount</th>
+                    <th>From Currency</th>
+                    <th>To Currency</th>
+                </tr>
+                <tr>
+                    <td><input type="text" id="amount" style="width: 130px"></td>
+                    <td>
+                        <select name="fromCurrency" id="fromCurrency">
+                            <option value="1">VietNam</option>
+                            <option value="2">America</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="toCurrency" id="toCurrency">
+                            <option value="1">VietNam</option>
+                            <option value="2">America</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="submit" value="Convert" onclick="event.preventDefault(); onClick()"
+                               style="background-color: cadetblue; color: white"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="Result" style="color: blue"></div>
+    <script>
+        function onClick()
+        {
+            var n = document.getElementById("amount").value;
+            var amount = parseInt(n);
+
+            var x = document.getElementById("fromCurrency").value;
+            var loaiTien1 = parseInt(x);
+
+            var y = document.getElementById("toCurrency").value;
+            var loaiTien2 = parseInt(y);
+
+            var result = document.getElementById("Result");
+
+            if (loaiTien1 == 1 && loaiTien2 == 2)
+            {
+                var sumAmount = amount / 23000;
+                result.innerHTML = "Result: " + sumAmount;
+            }
+            else if (loaiTien1 == 2 && loaiTien2 == 1)
+            {
+                var sumAmount = amount * 23000;
+                result.innerHTML = "Result: " + sumAmount;
+            }
+            else
+            {
+                var sumAmount = amount;
+                result.innerHTML = "Result: " + sumAmount;
+            }
+        }
+    </script>
+</body>
+</html>
+

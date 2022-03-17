@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1: Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học, và Sinh học.
+    // Sau đó hiển thị điểm trung bình và tổng của những điểm này.
+    let a = prompt("Nhap diem vat ly");
+    let b = prompt("Nhap diem hoa hoc");
+    let c = prompt("Nhap diem sinh hoc");
+    let vatly = parseInt(a);
+    let hoahoc = parseInt(b);
+    let sinhhoc= parseInt(c);
+    var dtb = (vatly + hoahoc + sinhhoc)/3;
+    document.write("Diem trung binh cua sinh vien la:" + dtb + "<br>");
+
+    //Bài 2:  Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit).
+    // [Hướng dẫn: C/5 = (F-32)/9]
+    let d = prompt("Nhap do C");
+    let DoC = parseInt(d);
+    var DoF = ((DoC/5)*9)+32;
+    document.write("Do F la: " + DoF+ "<br>");
+    //Bài 3: Viết chương trình tính diện tích hình tròn
+    //Bài 4: Viết chương trình chu vi hình tròn
+    let e = prompt("Nhap ban kinh hinh tron");
+    let r = parseInt(e);
+    var v = r*2*Math.PI;
+    var s = r*r*Math.PI;
+    document.write("Dien tich hinh tron la: " + s+ "<br>" +"Chu vi hinh tron la: " + v);
+</script>
+</body>
+</html>

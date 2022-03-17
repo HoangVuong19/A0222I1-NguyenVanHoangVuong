@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <form action="">
+            <h3>Caculator</h3>
+            <input type="text" id="soA" style="margin-bottom: 15px">
+            <input type="text" id="soB" > <br>
+            <input type="button" value="Addition(+)" style="margin-bottom: 15px" onclick="event.preventDefault();
+                                                                                                        onClick1()">
+            <input type="button" value="Subtraction(-)" onclick="event.preventDefault(); onClick2()">
+            <input type="button" value="Multiplication(X)" onclick="event.preventDefault(); onClick3()">
+            <input type="button" value="Division(/)" onclick="event.preventDefault(); onClick4()">
+            <!--onclick="event.preventDefault(): ngăn không cho form reload lại-->
+        </form>
+    </div>
+    <div id="result"></div>
+    <script>
+        function onClick1() {
+            var x = document.getElementById("soA").value;
+            var soA = parseInt(x);
+            var y = document.getElementById("soB").value;
+            var soB= parseInt(y);
+            var tong = soA + soB;
+            var result = document.getElementById("result");
+            result.innerHTML = "Result Division:" + tong;
+        }
+        function onClick2() {
+            var x = document.getElementById("soA").value;
+            var soA = parseInt(x);
+            var y = document.getElementById("soB").value;
+            var soB= parseInt(y);
+            var hieu = soA - soB;
+            var result = document.getElementById("result");
+            result.innerHTML = "Result Division:" + hieu;
+        }
+        function onClick3() {
+            var x = document.getElementById("soA").value;
+            var soA = parseInt(x);
+            var y = document.getElementById("soB").value;
+            var soB= parseInt(y);
+            var tich = soA * soB;
+            var result = document.getElementById("result");
+            result.innerHTML = "Result Division:" + tich;
+        }
+        function onClick4() {
+            var x = document.getElementById("soA").value;
+            var soA = parseInt(x);
+            var y = document.getElementById("soB").value;
+            var soB= parseInt(y);
+            var thuong = soA / soB;
+            var result = document.getElementById("result");
+            result.innerHTML = "Result Division:" + thuong;
+        }
+    </script>
+</body>
+</html>
