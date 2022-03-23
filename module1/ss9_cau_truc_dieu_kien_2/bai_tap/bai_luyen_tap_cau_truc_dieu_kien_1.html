@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không.
+    function tinhChiaHet() {
+        let a = parseInt(prompt("Nhap so a:"));
+        let b = parseInt(prompt("Nhap so b:"));
+        if (a % b == 0) {
+            document.write("a chia het cho b");
+        } else {
+            document.write("a khong chia het cho b");
+        }
+    }
+
+    tinhChiaHet();
+
+
+    //Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.
+    function LenLop() {
+        let age = parseInt(prompt("nhap tuoi cua ban"));
+        if (age < 15) {
+            document.write("ban khong du dieu kien vao lop 10");
+        }
+    }
+
+    LenLop();
+
+
+    //Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0.
+    function soSanhSo() {
+        let number = parseInt(prompt("nhap so:"));
+        if (number > 0) {
+            document.write("so " + number + " lon hon khong");
+        } else {
+            document.write("so " + number + " nho hon khong");
+        }
+    }
+
+    soSanhSo();
+
+
+    //Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó
+    function soLonNhat() {
+        let number1 = parseInt(prompt("nhap so a"));
+        let number2 = parseInt(prompt("nhap so b"));
+        let number3 = parseInt(prompt("nhap so c"));
+        let max = number1;
+        if (max < number2) {
+            max = number2;
+        }
+        if (max < number3) {
+            max = number3;
+        }
+        document.write("so lon nhat trong 3 so la:" + max);
+    }
+
+    soLonNhat();
+
+
+    //Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ
+    function xepHang() {
+        let kiemTra = parseFloat(prompt("nhap diem bai kiem tra"));
+        let giuaKy = parseFloat(prompt("nhap diem bai thi giua ky"));
+        let cuoiKy = parseFloat(prompt("nhap diem bai thi cuoi ky"));
+        let dtb = kiemTra * 0.1 + giuaKy * 0.3 + cuoiKy * 0.6;
+        if (dtb >= 8.5) {
+            document.write("xep loai hoc luc gioi");
+        } else if (dtb >= 7) {
+            document.write("xep loai hoc luc kha");
+        } else if (dtb >= 5) {
+            document.write("xep loai hoc luc trung binh");
+        } else
+            document.write("xep loai hoc luc kem");
+    }
+
+    xepHang();
+
+
+    //Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+    function tinhHoaHong() {
+        let sales = parseFloat(prompt("nhap doanh so ban hang"));
+        let hoaHong;
+        if (sales >= 10000000) {
+            hoaHong = sales * 0.25;
+            document.write("hoa hong nhan vien nhan duoc la:" + hoaHong);
+        } else if (sales >= 5000000) {
+            hoaHong = sales * 0.2;
+            document.write("hoa hong nhan vien nhan duoc la:" + hoaHong);
+        } else if (sales >= 1000000) {
+            hoaHong = sales * 0.15;
+            document.write("hoa hong nhan vien nhan duoc la:" + hoaHong);
+        } else {
+            hoaHong = sales * 0.1;
+            document.write("hoa hong nhan vien nhan duoc la:" + hoaHong);
+        }
+    }
+
+    tinhHoaHong();
+
+
+    //Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
+    function tinhCuoc() {
+        let thoiGianGoi = parseInt(prompt("so phut ma ho gia dinh da su dung:"));
+        let cuocPhi;
+        if (thoiGianGoi >= 4000) {
+            cuocPhi = thoiGianGoi * 400;
+            document.write("cuoc phi ma ho gia dinh phai tra la:" + cuocPhi);
+        } else if (thoiGianGoi >= 2500) {
+            cuocPhi = thoiGianGoi * 300;
+            document.write("cuoc phi ma ho gia dinh phai tra la:" + cuocPhi);
+        } else if (thoiGianGoi >= 1000) {
+            cuocPhi = thoiGianGoi * 200;
+            document.write("cuoc phi ma ho gia dinh phai tra la:" + cuocPhi);
+        } else {
+            cuocPhi = thoiGianGoi * 100;
+            document.write("cuoc phi ma ho gia dinh phai tra la:" + cuocPhi);
+        }
+    }
+
+    tinhCuoc();
+</script>
+</body>
+</html>

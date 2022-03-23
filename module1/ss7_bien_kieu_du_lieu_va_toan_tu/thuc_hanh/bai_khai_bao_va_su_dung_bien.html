@@ -7,32 +7,43 @@
 <body>
 <script>
     //Bai 1
-    // let f = 20.5
-    // let b = true
-    // let s = 'Hà Nội'
-    // document.write('i = ' + i)
-    // document.write('<br/>')
-    // document.write('f = ' + f)
-    // document.write('<br/>')
-    // document.write('b = ' + b)
-    // document.write('<br/>')
-    // document.write('s = ' + s)
+    function gan() {
+        let f = 20.5
+        let b = true
+        let s = 'Hà Nội'
+        document.write('i = ' + i)
+        document.write('<br/>')
+        document.write('f = ' + f)
+        document.write('<br/>')
+        document.write('b = ' + b)
+        document.write('<br/>')
+        document.write('s = ' + s)
+    }
+
+    gan();
+
     //Bai 2
-    // let width = 20
-    // let height = 10
-    // let area = width * height
-    // document.write('Area = ' + area)
+    function dienTich() {
+        let width = 20
+        let height = 10
+        let area = width * height
+        document.write('Area = ' + area)
+    }
+
+    dienTich();
+
     //Bai 3
-    let a = prompt("Nhap vao a");
-    let b = prompt("Nhap vao b");
-    if (a % b == 0)
-    {
-        alert("a la boi so cua b");
+    function tinhBoiSo() {
+        let a = prompt("Nhap vao a");
+        let b = prompt("Nhap vao b");
+        if (a % b == 0) {
+            alert("a la boi so cua b");
+        } else {
+            alert("a khong phai la boi so cua b");
+        }
     }
-    else
-    {
-        alert("a khong phai la boi so cua b");
-    }
+
+    tinhBoiSo();
 </script>
 </body>
 </html>

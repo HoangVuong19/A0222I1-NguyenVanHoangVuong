@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1: Chuyển từ độ C sang độ F. °C  x  9/5 + 32 = °F
+    function chuyenDo() {
+        let DoC = parseInt(prompt("Nhap do C"));
+        if (true) {
+            let DoF = ((DoC / 5) * 9) + 32;
+            document.write("Do F la: " + DoF + "<br>");
+        }
+    }
+
+    chuyenDo();
+
+
+    //Bài 2: Chuyển từ mét sang feet: ft =m * 3.2808
+    function chuyenMet() {
+        let m = parseFloat(prompt("Nhap m:"));
+        if (m > 0) {
+            let feet = m * 3.2808;
+            document.write("feet la: " + feet + "<br>");
+        }
+    }
+
+    chuyenMet();
+
+
+    //Bài 3: Tính diện tích hình vuông khi biết cạnh a.
+    function hinhVuong() {
+        let a = parseInt(prompt("Nhap canh hinh vuong: "));
+        if (a > 0) {
+            let s = a ** a;
+            document.write("dien tich hinh vuong la: " + s + "<br>");
+        }
+    }
+
+    hinhVuong();
+
+
+    //Bài 4: Tính diện tích hình chữ nhật khi biết 02 cạnh a, b.
+    function hinhChuNhat() {
+        let a = parseInt(prompt("Nhap canh a: "));
+        let b = parseInt(prompt("Nhap canh b: "));
+        if (a > 0 && b > 0) {
+            if (a != b) {
+                let s = a * b;
+                document.write("dien tich hinh chu nhat la: " + s + "<br>");
+            }
+        }
+    }
+
+    hinhChuNhat();
+
+
+    //Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.
+    function tamGiacVuong() {
+        let a = parseInt(prompt("Nhap canh a: "));
+        let b = parseInt(prompt("Nhap canh b: "));
+        if (a > 0 && b > 0) {
+            if (a != b) {
+                let s = (a * b) / 2;
+                document.write("dien tich hinh tam giac vuong la: " + s + "<br>");
+            }
+        }
+    }
+
+    tamGiacVuong();
+
+
+    //Bài 6: Giải phương trình bậc 1. ax + b = 0
+    function ptBac1() {
+        let a = parseInt(prompt("Nhap a: "));
+        let b = parseInt(prompt("Nhap b: "));
+        if (a == 0 && b == 0) {
+            document.write('phuong trinh co vo so nghiem');
+        } else if (a != 0 && b == 0) {
+            document.write('phuong trinh co nghiem x = 0');
+        } else if (a == 0 && b != 0) {
+            document.write("phuong trinh vo nghiem");
+        } else {
+            document.write('phuong trinh co nghiem x = ' + (-b / a));
+        }
+    }
+
+    ptBac1();
+
+
+    //Bài 7: Giải phương trình bậc 2. ax^2 + bx + c = 0
+    function ptBac2() {
+        let x1, x2;
+        let a = parseInt(prompt("nhap a:"));
+        let b = parseInt(prompt("nhap b:"));
+        let c = parseInt(prompt("nhap c:"));
+        let delta = (b * b - 4 * a * c);
+        if (delta == 0) {
+            document.write("phuong trinh co nghiem kep x1 = x2 = " + ((-b) / (2 * a)));
+        } else if (delta < 0) {
+            document.write("phuong trinh vo nghiem");
+        } else {
+            x1 = (-b - Math.sqrt(delta)) / (2 * a);
+            x2 = (-b + Math.sqrt(delta)) / (2 * a);
+            document.write("phuong trinh co hai nghiem <br>x1= " + x1 + "<br>x2= " + x2);
+        }
+    }
+
+    ptBac2();
+
+
+    //Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+    //Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0
+    function tinhTuoi() {
+        let age = parseInt(prompt("nhap tuoi: "));
+        if (age > 0 && age < 120) {
+            document.write("tuoi cua ban hop le");
+        } else {
+            document.write("tuoi cua ban khong hop le");
+        }
+    }
+
+    tinhTuoi();
+
+
+    //Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.
+    // Điều kiện để a,b,c là cạnh của một tam giác là:
+    // a,b,c > 0
+    // a + b > c
+    // b + c > a
+    // a + c > b
+    function tinhTamGiac() {
+        let a = parseInt(prompt("nhap a: "));
+        let b = parseInt(prompt("nhap b: "));
+        let c = parseInt(prompt("nhap c: "));
+        if (a > 0 && b > 0 && c > 0) {
+            if ((a + b) > c && (b + c) > a && a + c > b) {
+                document.write("day la 3 canh cua mot tam giac");
+            } else {
+                document.write("day khong phai la 3 canh cua mot tam giac");
+            }
+        } else {
+            document.write("day khong phai la 3 canh cua mot tam giac");
+        }
+    }
+
+    tinhTamGiac();
+
+
+    //Bài 10: Viết chương trình tính giá điện
+    function tinhDien() {
+        let dien = parseFloat(prompt("nhap so dien tieu thu: "));
+        let gia;
+        if (dien <= 100) {
+            gia = dien * 600;
+            document.write("so tien phai tra la : " + gia);
+        } else if (dien > 101 && dien <= 150) {
+            gia = dien * 700;
+            document.write("so tien phai tra la : " + gia);
+        } else if (dien > 151 && dien < 200) {
+            gia = dien * 900;
+            document.write("so tien phai tra la : " + gia);
+        } else {
+            gia = dien ** 1100;
+            document.write("so tien phai tra la : " + gia);
+        }
+    }
+
+    tinhDien();
+
+
+    //Bài 11: Viết chương trình tính thuế thu nhập cá nhân
+    function tinhThue() {
+        let luong = parseFloat(prompt("nhap thu nhap cua ban: "));
+        let soThue;
+        if (luong > 15000000) {
+            soThue = luong * 30 / 100;
+            document.write("so thue phai tra la: " + soThue);
+        } else if (luong >= 7000000) {
+            soThue = luong * 20 / 100;
+            document.write("so thue phai tra la: " + soThue);
+        } else {
+            soThue = luong * 10 / 100;
+            document.write("so thue phai tra la: " + soThue);
+        }
+    }
+
+    tinhThue();
+
+
+    //Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay 
+    // và lãi xuất hàng nawm
+    // Số tiền lãi = Số tiền ban đầu x lãi suất năm/12 x số tháng cho vay
+    function tinhLaiNganHang() {
+        let tien = parseInt(prompt("nhap so tien ban dau cua ban: "));
+        let soThang = parseInt(prompt("nhap so thang cho vay: "));
+        let tienLai;
+        if (soThang > 36) {
+            tienLai = tien * (0.06 / 12) * soThang;
+            document.write("tien lai hang thang la: " + tienLai);
+        } else if (soThang > 12) {
+            tienLai = tien * (0.04 / 12) * soThang;
+            document.write("tien lai hang thang la: " + tienLai);
+        } else {
+            tienLai = tien * (0.02 / 12) * soThang;
+            document.write("tien lai hang thang la: " + tienLai);
+        }
+    }
+
+    tinhLaiNganHang();
+</script>
+</body>
+</html>
