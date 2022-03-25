@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = 20, N = 2;
+    //numbers: số lượng số nguyên tố muốn in ra
+    //N = 2: các số nguyên tố được in lần lượt bắt đầu từ 2
+    for (let count = 0; count < numbers;) {
+        let dem = 0;
+        for (let i = 1; i <= N; i++) {
+            if (N % i == 0) {
+                // mỗi lần số N chia hết thì biến đếm tăng 1 giá trị
+                dem += 1;
+            }
+        }
+        if (dem == 2) {
+            // nếu biến đếm chỉ chứa 2 giá trị thì đó là số nguyên tố
+            document.write(N + " ");
+            count++;
+        }
+        N++;
+    }
+</script>
+</body>
+</html>
