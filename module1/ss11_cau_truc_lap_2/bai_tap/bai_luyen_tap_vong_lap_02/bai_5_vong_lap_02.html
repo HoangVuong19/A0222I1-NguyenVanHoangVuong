@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 5: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con)
+    // khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+    do {
+        let tien = parseInt(prompt("nhap so tien ban dau cua ban: "));
+        let soThang = parseInt(prompt("nhap so thang cho vay: "));
+        let tienLai;
+        if (tien <= 0) {
+            alert("Nhap lai so tien cua ban");
+            continue;
+        }
+        if (soThang > 36) {
+            tienLai = tien * (0.06 / 12) * soThang;
+            document.write("tien lai hang thang la: " + tienLai);
+            break;
+        } else if (soThang > 12) {
+            tienLai = tien * (0.04 / 12) * soThang;
+            document.write("tien lai hang thang la: " + tienLai);
+            break;
+        } else {
+            tienLai = tien * (0.02 / 12) * soThang;
+            document.write("tien lai hang thang la: " + tienLai);
+            break;
+        }
+    } while (true)
+</script>
+</body>
+</html>

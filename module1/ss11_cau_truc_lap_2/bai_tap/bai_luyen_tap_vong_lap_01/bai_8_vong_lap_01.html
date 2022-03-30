@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let khoangDuoi = parseInt(prompt("Nhap khoang duoi: "));
+    let khoangTren = parseInt(prompt("Nhap khoang tren: "));
+    //Math.random() trả về các giá trị ngẫu nhiên từ 0.0001 -> 0.9999
+    //vd: khoangTren: 5 khoangDuoi: 2
+    //(khoangTren - khoangDuoi + 1) = 4
+    //Math.random() * (khoangTren - khoangDuoi + 1) trả về các giá trị ngẫu nhiên từ
+    //0.0004 -> 3.9999
+    //Math.random() * (khoangTren - khoangDuoi + 1) + khoangDuoi trả về các giá trị ngẫu nhiên từ
+    //2.0004 -> 5.9999
+    let random = Math.floor(Math.random() * (khoangTren - khoangDuoi + 1) + khoangDuoi);
+    let dem = 0;
+    do {
+        let n = parseInt(prompt("nhap so ma ban doan: "));
+        if (random == n) {
+            alert("chuc mung ban da doan dung!");
+            break;
+        } else if (random > n) {
+            alert("so ban nhap nho hon!");
+            dem++;
+        } else {
+            alert("so ban nhap lon hon!");
+            dem++;
+        }
+        if (dem >= 3) {
+            alert("ban da het luot choi!");
+            break;
+        }
+    } while (true)
+</script>
+</body>
+</html>
