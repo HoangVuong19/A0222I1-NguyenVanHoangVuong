@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu_Dien</title>
+</head>
+<body>
+<div>
+    <h2>Từ Điển Anh - Việt</h2>
+    <form action="">
+        <input type="text" name="search" id="search" placeholder="Nhập từ cần tìm">
+        <input type="submit" id="submit" value="Tìm" onclick="event.preventDefault(); onClick()">
+    </form>
+</div>
+<div id="Result"></div>
+<script>
+    function onClick() {
+        let arr = ["contact", "contract", "term", "money", "risk"];
+        let arr2 = ["Liên lạc", "Hợp đồng", "Điều khoản", "Tiền", "Rủi ro"];
+
+        let key = document.getElementById("search").value;
+        let result = document.getElementById("Result");
+
+        if (arr.includes(key)) {
+            result.innerHTML = "Result: " + arr2[arr.indexOf(key)];
+        } else {
+            result.innerHTML = "Không tìm thấy";
+        }
+    }
+</script>
+</body>
+</html>
