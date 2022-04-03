@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 4: Viết một chương trình để đếm số từ trong một chuỗi
+    let input = prompt("nhap chuoi: ");
+    let arr = input.split("");
+    let dem = 0;
+
+    for (let x = 0; x < arr.length; x++) {
+        if (arr[x].charCodeAt() >= 65 && arr[x].charCodeAt() <= 90) {
+            dem += 1;
+        } else if (arr[x].charCodeAt() >= 97 && arr[x].charCodeAt() <= 122) {
+            dem += 1;
+        }
+    }
+    console.log(arr);
+    console.log("so tu trong chuoi la: " + dem);
+</script>
+</body>
+</html>

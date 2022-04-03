@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng.
+    // Chương trình này đếm số ký tự số trong mảng.
+    let n = parseInt(prompt("nhap kich thuoc mang: "));
+    let arr = [], dem = 0;
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhap cac ky tu: ");
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].charCodeAt() >= 48 && arr[i].charCodeAt() <= 57) {
+            dem += 1;
+        }
+    }
+    console.log(arr);
+    console.log("so ky tu so trong mang la: " + dem);
+</script>
+</body>
+</html>
