@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        let dem = 0;
+        if (number < 2) {
+            document.write(number + " khong phai so nguyen to");
+        }
+        for (let count = 1; count <= number; count++) {
+            if (number % count == 0) {
+                dem += 1;
+            }
+        }
+        if (dem == 2) {
+            document.write(number + " la so nguyen to");
+        } else {
+            document.write(number + " khong phai so nguyen to");
+        }
+    }
+
+    let a = parseInt(prompt("nhap mot so: "));
+    isPrime(a);
+
+</script>
+</body>
+</html>
