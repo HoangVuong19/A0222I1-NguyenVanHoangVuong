@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+    //Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+    let n = prompt("nhap vao mot ky tu: ");
+    test(n);
+
+    function test(number) {
+      if (number >= "0" && number <= "9") {
+        return true;
+      }
+      return false;
+    }
+
+    let kiemTra = test(n);
+    console.log(kiemTra);
+  </script>
+</body>
+
+</html>

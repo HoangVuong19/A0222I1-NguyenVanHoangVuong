@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    let r = parseInt(prompt("nhap ban kinh: "));
+
+    function perimeter(radius) {
+      let perimeter = radius * 2 * Math.PI;
+      document.write("chu vi hinh tron la: " + perimeter + "<br>");
+    }
+
+    perimeter(r);
+
+    function acreage(radius) {
+      let acreage = Math.pow(radius, 2) * Math.PI;
+      document.write("dien tich hinh tron la: " + acreage);
+    }
+
+    acreage(r);
+  </script>
+</body>
+
+</html>
