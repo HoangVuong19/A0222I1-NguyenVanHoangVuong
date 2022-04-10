@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-<script>
-    //Bài 2: Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm.
-    // Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình.
-    function tangDoiSo(doiSo) {
-        doiSo += 1;
-        document.write(doiSo);
-    }
+  </head>
+  <body>
+    <script>
+      //Bài 2: Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm.
+      // Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình.
+      function doiSo(number) {
+        number += 1;
+        document.write(number);
+      }
 
-    tangDoiSo(5);
-</script>
-</body>
+      let a = parseInt(prompt("nhap vao mot so: "));
+      doiSo(a);
+    </script>
+  </body>
 </html>
