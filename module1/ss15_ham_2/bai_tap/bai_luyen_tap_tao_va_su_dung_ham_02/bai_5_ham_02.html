@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
     <title>Document</title>
 </head>
-
 <body>
-    <script>
-        //Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
-        let num1 = parseInt(prompt("nhap so a: "));
-        let num2 = parseInt(prompt("nhap so b: "));
-        let num3 = parseInt(prompt("nhap so c: "));
-        min(num1, num2, num3);
+<script>
+    //Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+    let num1 = parseInt(prompt("nhap so a: "));
+    let num2 = parseInt(prompt("nhap so b: "));
+    let num3 = parseInt(prompt("nhap so c: "));
+    min(num1, num2, num3);
 
-
-        function min(a, b, c) {
-            let min = a;
-            if (min > b) {
-                min = b;
-            }
-            if (min > c) {
-                min = c;
-            }
-            return min;
+    function min(a, b, c) {
+        let min = a;
+        if (min > b) {
+            min = b;
         }
+        if (min > c) {
+            min = c;
+        }
+        return min;
+    }
 
-        let numMin = min(num1, num2, num3);
-        console.log("so nho nhat trong 3 so " + num1 + ", " + num2 + ", " + num3 + "la: " + numMin);
-    </script>
+    let numMin = min(num1, num2, num3);
+    console.log("so nho nhat trong 3 so " + num1 + ", " + num2 + ", " + num3 + "la: " + numMin);
+</script>
 </body>
-
 </html>

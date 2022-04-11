@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    let num1 = parseInt(prompt("nhap so a: "));
+    let num2 = parseInt(prompt("nhap so b: "));
+    convert(num1, num2);
+
+    function convert(num1, num2) {
+        let num = num1;
+        num1 = num2;
+        num2 = num;
+        document.write("so a la: " + num1 + " so b la: " + num2);
+    }
+
+</script>
+</body>
+</html>

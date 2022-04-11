@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+    // Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+    let input = prompt("nhap cac ky tu: ");
+    let arr = input.split("");
+    let characters = prompt("nhap ky tu: ");
+
+    function checkArr(arr2, kyTu) {
+        let count = 0;
+        for (let i = 0; i < arr2.length; i++) {
+            if (arr2[i] === kyTu) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            console.log("phan tu " + kyTu + " xuat hien " + count + " lan");
+        } else {
+            console.log("-1");
+        }
+    }
+
+    checkArr(arr, characters);
+</script>
+</body>
+</html>
