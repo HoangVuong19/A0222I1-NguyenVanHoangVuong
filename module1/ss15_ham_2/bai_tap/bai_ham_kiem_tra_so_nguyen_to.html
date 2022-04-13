@@ -6,25 +6,28 @@
 </head>
 <body>
 <script>
+    let a = parseInt(prompt("nhap mot so: "));
+    isPrime(a);
+
     function isPrime(number) {
         let dem = 0;
         if (number < 2) {
-            document.write(number + " khong phai so nguyen to");
+            return false;
         }
         for (let count = 1; count <= number; count++) {
-            if (number % count == 0) {
+            if (number % count === 0) {
                 dem += 1;
             }
         }
-        if (dem == 2) {
-            document.write(number + " la so nguyen to");
+        if (dem === 2) {
+            return true;
         } else {
-            document.write(number + " khong phai so nguyen to");
+            return false;
         }
     }
 
-    let a = parseInt(prompt("nhap mot so: "));
-    isPrime(a);
+    let kiemTra = isPrime(a);
+    console.log(kiemTra);
 
 </script>
 </body>

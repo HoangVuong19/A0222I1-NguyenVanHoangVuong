@@ -15,6 +15,7 @@
             array[i][j] = "";
         }
     }
+    display();
 
 
     // hàm hiện thị bàn cờ
@@ -32,22 +33,21 @@
         document.getElementById("ketQua").innerHTML = tableString;
     }
 
-    display();
 
     // hàm xử lý khi người chơi click play
     let checkPlayer = true;
 
     function play(i, j) {
-        if (checkPlayer == true && isNotData(i, j) == true) {
+        if (checkPlayer && isNotData(i, j)) {
             array[i][j] = "X";
             checkPlayer = false;
-            if (checkWin() == true) {
+            if (checkWin()) {
                 alert("nguời chơi đánh X chiến thắng");
             }
-        } else if (checkPlayer == false && isNotData(i, j) == true) {
+        } else if (!checkPlayer && isNotData(i, j)) {
             array[i][j] = "O";
             checkPlayer = true;
-            if (checkWin() == true) {
+            if (checkWin()) {
                 alert("nguời chơi đánh O chiến thắng");
             }
         }
