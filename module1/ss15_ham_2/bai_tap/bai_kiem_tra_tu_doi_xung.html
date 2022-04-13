@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tư duy bài toán: ban đầu ta sẽ tìm ra độ dài của chuỗi,
+    // Với chuỗi lẻ ta lấy điểm giữa chuỗi là điểm đối xứng, VD: reder thì 'd' sẽ là điểm đối xứng ở vị trí 2
+    // Với chuỗi chẵn ta không cần tìm điểm đối xứng, VD: redder thì đây là chuỗi chẵn (độ dài chuỗi = 6)
+    // Vòng lặp for sẽ chạy với độ dài nửa chuỗi
+    // Trong vòng lặp for tiến hành so sánh độ dài của vị trí đầu tiên với vị trí cuối cùng bằng code
+    //str[i] == str[str.length - i - 1]
+    // VD: Với reder có str.length = 5 thì str[0] = r ; str[5 - 0 - 1] = str[4]
+    let s = prompt("nhap mot chuoi: ");
+    isPalindrome(s);
+
+
+    function isPalindrome(str) {
+        let len = Math.floor(str.length / 2);
+        // len để tính độ dài của 1 nửa chuỗi
+        for (let i = 0; i < len; i++) {
+            if (str[i] !== str[str.length - i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+    let check = isPalindrome(s);
+    console.log(check);
+
+</script>
+</body>
+</html>
