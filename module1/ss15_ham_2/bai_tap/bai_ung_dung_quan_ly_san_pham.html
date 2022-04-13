@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <input type="text" id="product" placeholder="Nhập sản phẩm">
+        </td>
+        <td>
+            <input id="add" type="button" onclick="add()" value="Thêm mới sản phẩm">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input id="save" type="button" onclick="save()" value="Save" style="display:none;">
+            <!--input onclick="save() dùng cách 2 để edit sản phẩm-->
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span>Số lượng sản phẩm:  </span><span id="soLuong"></span>
+        </td>
+    </tr>
+</table>
+<p id="display"></p>
+<script>
+    let productList = ["Sam Sung", "Nokia", "Iphone", "Sony"];
+    display(productList);
+    let editId; //tạo biến để xác định vị trí sản phẩm cần edit (trong cách 2 phần onclick edit)
+
+
+    //Tạo giao diện hiển thị quản lý sản phẩm
+    function display(list) {
+        let tableString = '<table border="1" style="border-collapse: collapse">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Name</th>\n' +
+            '        <th>Edit</th>\n' +
+            '        <th>Delete</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < list.length; i++) {
+            tableString += '<tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + list[i] + '</td>\n' +
+                '        <td><input type="button" onclick="edit(' + i + ')" value="edit"></td>\n' +
+                '        <td><input type="button" onclick="deleteProduct(' + i + ')" value="delete"></td>\n' +
+                '    </tr>';
+        }
+        tableString += '</table>'
+        document.getElementById("display").innerHTML = tableString;
+        document.getElementById("soLuong").innerText = list.length;
+    }
+
+
+    //Cấu hình onclick khi nhấn nút thêm mới sản phẩm
+    function add() {
+        let newProduct = document.getElementById("product").value;
+        // kiểm tra điều kiện có tên sp mới cho add
+        if (newProduct != "") {
+            productList.push(newProduct);
+        } else {
+            alert("Bạn cần phải nhập tên sản phẩm");
+        }
+        display(productList);
+        document.getElementById("product").value = "";
+    }
+
+
+    //Cách 1: cấu hình onclick khi nhấn nút edit sản phẩm (hiển thị ra một bảng thông báo)
+    // function edit(index) {
+    //     let editName = prompt("Nhập tên mới", productList[index]);
+    //     productList[index] = editName;
+    //     display(productList);
+    // }
+
+    //Cách 2: cấu hình onclick khi nhấn nút edit sản phẩm (bước 1 hiển thị lên thẻ input)
+    function edit(index) {
+        editId = index;
+        document.getElementById("product").value = productList[index];
+        document.getElementById("save").style.display = "block";
+        document.getElementById("add").style.display = "none";
+    }
+
+    //Cách 2: (bước 2 lưu lại giá sau khi edit)
+    function save() {
+        productList[editId] = document.getElementById("product").value;
+        display(productList);
+
+        document.getElementById("save").style.display = "none";
+        document.getElementById("add").style.display = "block";
+        document.getElementById("product").value = "";
+    }
+
+
+    //cấu hình onclick khi nhấn nút delete sản phẩm
+    function deleteProduct(index) {
+        let conf = confirm("Bạn có muốn xóa sản phẩm " + productList[index])
+        if (conf) {
+            productList.splice(index, 1);
+        }
+        display(productList);
+    }
+</script>
+</body>
+</html>
