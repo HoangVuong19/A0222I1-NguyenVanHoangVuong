@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(c) {
+            this.c = c;
+        }
+
+        calculateF() {
+            return this.c * 1.8 + 32;
+        }
+
+        calculateKenvin() {
+            return this.c + 273.15;
+        }
+    }
+
+    let doC = parseInt(prompt("Nhap do C: "));
+    let temperature = new Temperature(doC);
+    alert(doC + "C = " + temperature.calculateF() + "F\n" + doC + "C = " + temperature.calculateKenvin() + "K");
+
+
+</script>
+</body>
+</html>
