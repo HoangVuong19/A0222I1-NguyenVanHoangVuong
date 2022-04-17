@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    class Rectangle {
+        constructor(length, width) {
+            this.length = length; //chiều dài
+            this.width = width; //chiều rộng
+        }
+
+        getArea() {
+            return this.length * this.width;
+        }
+
+        getPerimeter() {
+            return (this.length + this.width) * 2;
+        }
+
+        createRectangle() {
+            let ctx = document.getElementById("myCanvas").getContext("2d");
+
+            ctx.beginPath();
+            ctx.fillRect(350, 350, this.length, this.width);
+            ctx.fill();
+        }
+    }
+
+
+    let rectangle = new Rectangle(400, 200);
+    rectangle.createRectangle();
+
+    alert("Chu vi cua hinh chu nhat la: " + rectangle.getPerimeter() +
+        "\nDien tich cua hinh chu nhat la: " + rectangle.getArea())
+
+</script>
+</body>
+</html>

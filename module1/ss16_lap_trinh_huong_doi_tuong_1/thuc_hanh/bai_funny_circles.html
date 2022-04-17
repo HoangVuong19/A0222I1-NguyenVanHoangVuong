@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funny Circle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+    class Circle {
+        constructor(x, y, radius) {
+            this.x = x; //tọa độ Ox của hình tròn
+            this.y = y; //tọa độ Oy của hình tròn
+            this.radius = radius;
+        }
+
+        createCircle() {
+            let ctx = document.getElementById("myCanvas").getContext("2d"); //xác định loại của canvas bằng getContext
+            this.radius = Math.floor(Math.random() * 80); //tạo bán kính ngẫu nhiên 0 - 80
+            let color = getRandomColor();
+            this.x = Math.random() * window.innerWidth; //tạo tọa độ Ox ngẫu nhiên của hình tròn trong cửa sổ window
+            this.y = Math.random() * window.innerHeight;//tạo tọa độ Oy ngẫu nhiên của hình tròn trong cửa sổ window
+
+            ctx.beginPath(); //khai báo bắt đầu vẽ hình mới
+            ctx.fillStyle = color; //trả về dải màu
+            ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI); //hàm vẽ đường tròn
+            ctx.fill(); //hiển thị màu lên hình
+        }
+
+    }
+
+
+    function getRandomHex() { //hàm tạo vị trí bảng mã màu ngẫu nhiên 0 - 255
+        return Math.floor(Math.random() * 255);
+    }
+
+    function getRandomColor() { //hàm tạo bảng mã màu ngẫu nhiên
+        let red = getRandomHex();
+        let green = getRandomHex();
+        let blue = getRandomHex();
+        return "rgb(" + red + "," + green + "," + blue + ")";
+    }
+
+    function createMultipleCircle() { //hàm tạo 30 hình tròn
+        for (let i = 0; i < 30; i++) {
+            circle.createCircle();
+        }
+    }
+
+
+    let circle = new Circle();
+    createMultipleCircle();
+
+
+</script>
+</body>
+</html>
