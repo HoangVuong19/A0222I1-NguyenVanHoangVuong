@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><span>Iphone</span></td>
+        <td><input id="iphone" type="text"></td>
+        <td><input type="button" onclick="gui('iphone')" value="Gửi tin"></td>
+    </tr>
+    <tr>
+        <td><span>Nokia</span></td>
+        <td><input id="nokia" type="text"></td>
+        <td><input type="button" onclick="gui('nokia')" value="Gửi tin"></td>
+    </tr>
+</table>
+<script>
+    class DienThoai {
+        constructor(pin) {
+            this.status = true; // đang mở
+            this.pin = pin;
+            this.vungNhoSoanThao = "";
+            this.vungNhoTinDen = [];
+            this.vungNhoTinDaGui = [];
+        }
+
+        checkStatus() {
+            return this.status;
+        }
+
+        batTat() {
+            this.status = !this.status;
+        }
+
+        sacPin() {
+            if (this.pin < 10) {
+                this.pin = 100;
+            }
+        }
+
+        soanTinNhan(tinSoanThao) {
+            this.pin--;
+            this.vungNhoSoanThao = tinSoanThao;
+        }
+
+        nhanTinNhan(tinDen) {
+            this.pin--;
+            this.vungNhoTinDen.push(tinDen);
+        }
+
+        guiTinNhan(dienThoai, tinGui) {
+            this.pin--;
+            this.soanTinNhan(tinGui);
+            this.vungNhoTinDaGui.push(this.vungNhoSoanThao)
+            dienThoai.nhanTinNhan(this.vungNhoSoanThao)
+            this.vungNhoSoanThao = "";
+        }
+
+        hienThiTinDen() {
+            this.pin--;
+            let mess = "";
+            for (let i = 0; i < this.vungNhoTinDen.length; i++) {
+                // console.log((1+i)+"."+this.vungNhoTinDen[i]);
+                mess += this.vungNhoTinDen[i] + ",";
+            }
+            return mess
+        }
+
+        hienThiTinDaGui() {
+            for (let i = 0; i < this.vungNhoTinDaGui.length; i++) {
+                console.log((1 + i) + "." + this.vungNhoTinDaGui[i]);
+            }
+        }
+    }
+
+    let nokia = new DienThoai(100);
+    let iphone = new DienThoai(100);
+
+    // nokia.batTat();
+    // let check = nokia.checkStatus(); //Kiểm tra nokia đang bật hay tắt
+    // console.log(check);
+
+    // nokia.guiTinNhan(iphone,"hello iphone");
+    // iphone.hienThiTinDen();
+    // iphone.guiTinNhan(nokia,"Ok xin chào nokia");
+    // nokia.hienThiTinDen();
+
+    function gui(ten) {
+        if (ten == "iphone") {
+            alert("iphone gửi tin tới nokia");
+            let newMess = document.getElementById('iphone').value;
+            iphone.guiTinNhan(nokia, newMess);
+            document.getElementById('nokia').value = nokia.hienThiTinDen();
+            document.getElementById('iphone').value = "";
+        } else if (ten == "nokia") {
+            alert("nokia gửi tin tới iphone");
+            let newMess = document.getElementById('nokia').value;
+            nokia.guiTinNhan(iphone, newMess);
+            document.getElementById('iphone').value = iphone.hienThiTinDen();
+            document.getElementById('nokia').value = "";
+        }
+    }
+</script>
+</body>
+</html>

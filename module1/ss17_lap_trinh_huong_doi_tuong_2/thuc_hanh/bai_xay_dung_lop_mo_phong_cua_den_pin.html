@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Khai báo lớp Battery
+    class Battery {
+        constructor() {
+            this.energy = 10;
+        }
+
+        setEnergy(energy) {
+            this.energy = energy;
+        }
+
+        getEnergy() {
+            return this.energy;
+        }
+
+        decreaseEnergy() {
+            if (this.energy > 0) {
+                this.energy--;
+                return this.energy;
+            }
+        }
+    }
+
+    //Khai báo lớp FlashLamp
+    class FlashLamp {
+        constructor(battery) {
+            this.status = false; //mặc định ban đầu đèn tắt
+            this.battery = battery;
+        }
+
+        setBattery(battery) {
+            this.battery = battery;
+        }
+
+        getBatteryInfo() {
+            if (this.status) {
+                return this.battery.decreaseEnergy();
+            }
+            return this.battery.getEnergy();
+        }
+
+        light() {
+            if (this.status) {
+                alert("Lighting");
+            } else {
+                alert("Not lighting");
+            }
+        }
+
+        turnOn() {
+            this.status = true;
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+    }
+
+    //Kiểm tra
+    let battery = new Battery();
+
+    let flashLamp = new FlashLamp();
+    flashLamp.setBattery(battery);
+
+    document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
+
+    document.write("Turn on<br/>")
+    flashLamp.turnOn();
+    flashLamp.light();
+    document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
+
+    document.write("Turn off<br/>")
+    flashLamp.turnOff();
+    flashLamp.light();
+    document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
+
+</script>
+</body>
+</html>
