@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 2: Cho 2 mảng A và B chứa số nguyên.
+    // Tìm ra một mảng đã được sắp xếp chứa các phần tử xuất hiện trong mảng B nhưng lại không xuất hiện A
+    let arrLth1 = parseInt(prompt("nhap do dai cua mang a: "));
+    let arrLth2 = parseInt(prompt("nhap do dai cua mang b: "));
+    let a = [];
+    let b = [];
+    let missingValue = [];
+    let ordinal = 0;
+
+    for (let i = 0; i < arrLth1; i++) {
+        a[i] = parseInt(prompt("nhap so cua mang a: "));
+    }
+    for (let i = 0; i < arrLth2; i++) {
+        b[i] = parseInt(prompt("nhap so cua mang b: "));
+    }
+    for (let i = 0; i < b.length; i++) {
+        let count = 0;
+        for (let j = 0; j < a.length; j++) {
+            if (b[i] === a[j]) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            missingValue[ordinal] = b[i];
+            ordinal++;
+        }
+    }
+    console.log("missingValue(a, b) = [" + missingValue.toString() + "]");
+</script>
+</body>
+</html>
