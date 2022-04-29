@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 3: Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng.
+    // Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s1, s2) = 3.
+    // 2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
+
+    let str1 = prompt("nhap xau 1: ");
+    let str2 = prompt("nhap xau 2: ");
+
+    function commonCharacterCount(str1, str2) {
+        let arr1 = str1.split("");
+        let arr2 = str2.split("");
+        let count = 0;
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr2.length; j++) {
+                if (arr1[i] === arr2[j]) {
+                    count++;
+                    arr1.splice(i, 1);
+                    arr2.splice(j, 1);
+                    i--;
+                    break;
+                }
+            }
+        }
+        return count;
+    }
+
+    alert("hai xau co: " + commonCharacterCount(str1, str2) + " ky tu chung");
+</script>
+</body>
+</html>
