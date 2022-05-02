@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 3: Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều
+    let m = parseInt(prompt("nhap so dong cua mang 2 chieu: "));
+    let n = parseInt(prompt("nhap so cot cua mang 2 chieu: "));
+    let matrix = [];
+
+    for (let i = 0; i < m; i++) {
+        let arr = [];
+        for (let j = 0; j < n; j++) {
+            arr[j] = parseInt(prompt("nhap so vao mang 2 chieu: "));
+        }
+        matrix[i] = arr;
+    }
+
+    function findMax(matrix) {
+        let max = matrix[0][0];
+        for (let i = 0; i < matrix.length; i++) {
+            for (let j = 0; j < matrix[i].length; j++) {
+                if (max < matrix[i][j]) {
+                    max = matrix[i][j];
+                }
+            }
+        }
+        return max;
+    }
+
+    function findMin(matrix) {
+        let min = matrix[0][0]
+        for (let i = 0; i < matrix.length; i++) {
+            for (let j = 0; j < matrix[i].length; j++) {
+                if (min > matrix[i][j]) {
+                    min = matrix[i][j];
+                }
+            }
+        }
+        return min;
+    }
+
+    console.log("Gia tri lon nhat la: " + findMax(matrix));
+    console.log("Gia tri nho nhat la: " + findMin(matrix));
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.
+    let m = parseInt(prompt("nhap so dong cua mang 2 chieu: "));
+    let n = parseInt(prompt("nhap so cot cua mang 2 chieu: "));
+    let matrix = [];
+    let count = 0;
+
+    for (let i = 0; i < m; i++) {
+        let arr = [];
+        for (let j = 0; j < n; j++) {
+            arr[j] = parseInt(prompt("nhap so vao mang 2 chieu: "));
+        }
+        matrix[i] = arr;
+    }
+
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+            if (isPrime(matrix[i][j])) {
+                count++;
+                console.log(matrix[i][j]);
+            }
+        }
+    }
+
+    function isPrime(number) {
+        if (number < 2) {
+            return false;
+        }
+        for (let count = 2; count <= Math.sqrt(number); count++) {
+            if (number % count === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+</script>
+</body>
+</html>

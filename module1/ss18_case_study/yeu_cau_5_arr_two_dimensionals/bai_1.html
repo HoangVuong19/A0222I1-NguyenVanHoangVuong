@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Bài 1: Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n. Với m, n là các số nhập từ bàn phím.
+    let m = parseInt(prompt("nhap so dong cua ma tran: "));
+    let n = parseInt(prompt("nhap so cot cua ma tran: "));
+    let matrix = [];
+    let total = 0;
+
+    for (let i = 0; i < m; i++) {
+        let arr = [];
+        for (let j = 0; j < n; j++) {
+            arr[j] = parseInt(prompt("nhap so vao matrix: "));
+        }
+        matrix[i] = arr;
+    }
+
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+            if (matrix[i][j] % 2 === 0) {
+                total += matrix[i][j];
+            }
+        }
+    }
+
+    alert("tong cua cac so chan trong matrix la: " + total);
+    console.table(matrix);
+
+
+</script>
+</body>
+</html>
