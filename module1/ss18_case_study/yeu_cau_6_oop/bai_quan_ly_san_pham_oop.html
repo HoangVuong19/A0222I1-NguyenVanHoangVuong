@@ -7,22 +7,14 @@
 <body>
 <table>
     <tr>
-        <td>
-            <input type="text" id="product" placeholder="Nhập sản phẩm">
-        </td>
-        <td>
-            <input id="add" type="button" onclick="add()" value="Thêm mới sản phẩm">
-        </td>
+        <td><input type="text" id="product" placeholder="Nhập sản phẩm"></td>
+        <td><input id="add" type="button" onclick="add()" value="Thêm mới sản phẩm"></td>
     </tr>
     <tr>
-        <td>
-            <input id="save" type="button" onclick="save()" value="Save" style="display:none;">
-        </td>
+        <td><input id="save" type="button" onclick="save()" value="Save" style="display:none;"></td>
     </tr>
     <tr>
-        <td>
-            <span>Số lượng sản phẩm:  </span><span id="soLuong"></span>
-        </td>
+        <td><span>Số lượng sản phẩm:  </span><span id="soLuong"></span></td>
     </tr>
 </table>
 <p id="display"></p>
@@ -104,7 +96,7 @@
 
     //cấu hình onclick khi nhấn nút delete sản phẩm
     function deleteProduct(index) {
-        let conf = confirm("Bạn có muốn xóa sản phẩm " + productList[index].getName())
+        let conf = confirm("Bạn có muốn xóa sản phẩm " + productList[index].getName());
         if (conf) {
             productList.splice(index, 1);
         }
