@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 6; i++) {
+        arr[i] = parseInt(prompt("Nhập số vào mảng có độ dài là 6: "));
+    }
+    displayResult(arr);
+
+    function displayResult(array) {
+        let primeNumberArr = [];
+        for (let i = 0; i < array.length; i++) {
+            if (primeNumberCheck(array[i])) {
+                primeNumberArr.push(array[i]);
+            }
+        }
+        primeNumberArr.sort(function (a, b) {
+            return a - b;
+        })
+        alert("Số nguyên tố có trong mảng là: " + primeNumberArr);
+    }
+
+    function primeNumberCheck(number) {
+        if (number < 2) {
+            return false;
+        }
+        for (let count = 2; count <= Math.sqrt(number); count++) {
+            if (number % count === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

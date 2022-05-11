@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let evenSum = 0;
+    let oddSum = 0;
+    let result;
+
+    do {
+        let input = parseInt(prompt("Nhập n phần tử: "));
+        if (input <= 20) {
+            for (let i = 0; i < input; i++) {
+                arr[i] = parseInt(prompt("Nhập các số nguyên: "));
+            }
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 === 0) {
+                    evenSum += arr[i];
+                } else {
+                    oddSum += arr[i];
+                }
+            }
+            result = evenSum - oddSum;
+            alert("Mảng gồm các số: " + arr + "\nResult: " + result);
+            break;
+        } else {
+            alert("Số phần tử vượt quá 20. Vui lòng nhập lại!!!");
+            continue;
+        }
+    } while (true);
+</script>
+</body>
+</html>

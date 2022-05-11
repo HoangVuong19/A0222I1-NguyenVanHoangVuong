@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td><input type="text" id="id" placeholder="Nhập mã điện thoại"></td>
+        <td><input type="text" id="name" placeholder="Nhập tên điện thoại"></td>
+        <td><input type="text" id="factory" placeholder="Nhập hãng sản xuất"></td>
+        <td><input type="text" id="price" placeholder="Nhập giá điện thoại"></td>
+        <td><input type="button" onclick="add()" value="Thêm"></td>
+    </tr>
+    <tr>
+        <td><span>Số lượng sản phẩm:  </span><span id="quantity"></span></td>
+    </tr>
+</table>
+<p id="display"></p>
+<script>
+    class Phone {
+        constructor(id, name, factory, price) {
+            this.id = id;
+            this.name = name;
+            this.factory = factory;
+            this.price = price;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        setId(idPhone) {
+            this.id = idPhone;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getFactory() {
+            return this.factory;
+        }
+
+        setFactory(factory) {
+            this.factory = factory;
+        }
+
+        getPrice() {
+            return this.price;
+        }
+
+        setPrice(price) {
+            this.price = price;
+        }
+    }
+
+    let phoneList = [];
+    let phone = new Phone("DT001", "Redmi Note 8", "Xiaomi", "4.800.000");
+    phoneList.push(phone);
+    display(phoneList);
+
+    function display(list) {
+        let tableString = '<table border="1" style="border-collapse: collapse">\n' +
+            '    <tr>\n' +
+            '        <th>Mã điện thoại</th>\n' +
+            '        <th>Tên điện thoại</th>\n' +
+            '        <th>Hãng sản xuất</th>\n' +
+            '        <th>Giá</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < list.length; i++) {
+            tableString += '<tr>\n' +
+                '        <td>' + list[i].getId() + '</td>\n' +
+                '        <td>' + list[i].getName() + '</td>\n' +
+                '        <td>' + list[i].getFactory() + '</td>\n' +
+                '        <td>' + list[i].getPrice() + '</td>\n' +
+                '    </tr>';
+        }
+        tableString += '</table>'
+        document.getElementById("display").innerHTML = tableString;
+        document.getElementById("quantity").innerText = list.length;
+    }
+
+    function add() {
+        let newPhone = new Phone(document.getElementById("id").value, document.getElementById("name").value,
+            document.getElementById("factory").value, document.getElementById("price").value);
+        if (newPhone.getId() !== "" && newPhone.getName() !== "" && newPhone.getFactory() !== "" && newPhone.getPrice() !== "") {
+            phoneList.push(newPhone);
+            display(phoneList);
+        } else {
+            alert("Bạn cần phải nhập đủ thông tin sản phẩm");
+        }
+        document.getElementById("id").value = "";
+        document.getElementById("name").value = "";
+        document.getElementById("factory").value = "";
+        document.getElementById("price").value = "";
+    }
+
+</script>
+</body>
+</html>
