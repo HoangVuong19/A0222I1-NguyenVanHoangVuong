@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5670a677-1ab8-49e9-871a-6ec0a0492846" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_03_array_and_method_java/bai_tap/bai_tim_gia_tri_nho_nhat/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_03_array_and_method_java/bai_tap/bai_tim_phan_tu_lon_nhat_trong_mang_hai_chieu/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_03_array_and_method_java/bai_tap/bai_dem_so_lan_xuat_hien_ky_tu/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_03_array_and_method_java/bai_tap/bai_tinh_tong_cac_so_o_mot_cot/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_03_array_and_method_java/bai_tap/bai_tinh_tong_o_duong_cheo_chinh/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,13 +55,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_03_array_and_method_java.bai_tap.bai_xoa_phan_tu_khoi_mang.Main" />
+  <component name="RunManager" selected="Application.Main (4)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_03_array_and_method_java.thuc_hanh.bai_dem_so_luong_sinh_vien_thi_do.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_03_array_and_method_java.bai_tap.bai_xoa_phan_tu_khoi_mang.*" />
+          <option name="PATTERN" value="_03_array_and_method_java.thuc_hanh.bai_dem_so_luong_sinh_vien_thi_do.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_03_array_and_method_java.bai_tap.bai_tinh_tong_cac_so_o_mot_cot.Main" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_03_array_and_method_java.bai_tap.bai_tinh_tong_cac_so_o_mot_cot.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,11 +83,11 @@
       </method>
     </configuration>
     <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_03_array_and_method_java.bai_tap.bai_them_phan_tu_vao_mang.Main" />
+      <option name="MAIN_CLASS_NAME" value="_03_array_and_method_java.bai_tap.bai_tinh_tong_o_duong_cheo_chinh.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_03_array_and_method_java.bai_tap.bai_them_phan_tu_vao_mang.*" />
+          <option name="PATTERN" value="_03_array_and_method_java.bai_tap.bai_tinh_tong_o_duong_cheo_chinh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,24 +96,11 @@
       </method>
     </configuration>
     <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_03_array_and_method_java.bai_tap.bai_gop_mang.Main" />
+      <option name="MAIN_CLASS_NAME" value="_03_array_and_method_java.bai_tap.bai_dem_so_lan_xuat_hien_ky_tu.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_03_array_and_method_java.bai_tap.bai_gop_mang.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_03_array_and_method_java.bai_tap.bai_tim_phan_tu_lon_nhat_trong_mang_hai_chieu.Main" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_03_array_and_method_java.bai_tap.bai_tim_phan_tu_lon_nhat_trong_mang_hai_chieu.*" />
+          <option name="PATTERN" value="_03_array_and_method_java.bai_tap.bai_dem_so_lan_xuat_hien_ky_tu.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +153,7 @@
       <workItem from="1653030919922" duration="4612000" />
       <workItem from="1653042956861" duration="12467000" />
       <workItem from="1653098517521" duration="4893000" />
-      <workItem from="1653144189781" duration="1089000" />
+      <workItem from="1653144189781" duration="6248000" />
     </task>
     <task id="LOCAL-00001" summary="nop bai ngay 16-05">
       <created>1652702838084</created>
@@ -224,7 +225,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653103369023</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="nop bai ngay 21-05">
+      <created>1653145440213</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653145440213</updated>
+    </task>
+    <task id="LOCAL-00012" summary="nop bai ngay 21-05">
+      <created>1653146741637</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653146741637</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,25 +269,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="568" y="226" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1652705695562" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1653145294301">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1653150421463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1653145294301" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1653145294301">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1653150421463" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1653150421463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1653145294301" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1653145294301">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1653150421463" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1653150421463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1653145294301" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1653145294301">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1653150421463" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1653150421463">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1653145294301" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1653103374850">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1653150421463" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1653146748055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1653103374850" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1653146748055" />
   </component>
 </project>
