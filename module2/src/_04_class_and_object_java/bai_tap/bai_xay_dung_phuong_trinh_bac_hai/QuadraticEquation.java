@@ -10,15 +10,15 @@ public class QuadraticEquation {
     }
 
     public double getA() {
-        return this.a;
+        return a;
     }
 
     public double getB() {
-        return this.b;
+        return b;
     }
 
     public double getC() {
-        return this.c;
+        return c;
     }
 
     public double getDiscriminant() {
