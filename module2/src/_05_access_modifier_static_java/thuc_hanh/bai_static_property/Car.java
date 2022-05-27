@@ -1,4 +1,4 @@
-package _05_access_modifier_static_java.thuc_hanh.bai_static_property_assignment;
+package _05_access_modifier_static_java.thuc_hanh.bai_static_property;
 
 public class Car {
     private String name;

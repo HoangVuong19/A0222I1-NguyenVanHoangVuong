@@ -1,4 +1,4 @@
-package _05_access_modifier_static_java.thuc_hanh.bai_static_method_assignment;
+package _05_access_modifier_static_java.thuc_hanh.bai_static_method;
 
 public class Student {
     private int rollno;
