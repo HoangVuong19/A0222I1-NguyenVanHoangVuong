@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>_06_ke_thua_java.bai_tap.bai_lop_circle_va_cylinder</OriginalElement>
+  <nodes>
+    <node x="0.0" y="278.0">_06_ke_thua_java.bai_tap.bai_lop_circle_va_cylinder.Cylinder</node>
+    <node x="0.5" y="0.0">_06_ke_thua_java.bai_tap.bai_lop_circle_va_cylinder.Circle</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="_06_ke_thua_java.bai_tap.bai_lop_circle_va_cylinder.Cylinder" target="_06_ke_thua_java.bai_tap.bai_lop_circle_va_cylinder.Circle">
+      <point x="0.0" y="-81.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="118.5" y="173.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
