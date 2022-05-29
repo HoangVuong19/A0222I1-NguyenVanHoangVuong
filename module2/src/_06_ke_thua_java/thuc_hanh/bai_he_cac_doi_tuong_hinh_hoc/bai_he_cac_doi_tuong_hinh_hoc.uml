@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc</OriginalElement>
+  <nodes>
+    <node x="97.0" y="0.0">_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Shape</node>
+    <node x="0.0" y="256.0">_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Rectangle</node>
+    <node x="192.0" y="289.0">_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Circle</node>
+    <node x="0.0" y="556.0">_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Square</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Rectangle" target="_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Shape">
+      <point x="0.0" y="-125.0" />
+      <point x="86.0" y="231.0" />
+      <point x="139.25" y="231.0" />
+      <point x="-42.25" y="103.0" />
+    </edge>
+    <edge source="_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Square" target="_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Rectangle">
+      <point x="0.0" y="-71.0" />
+      <point x="0.0" y="125.0" />
+    </edge>
+    <edge source="_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Circle" target="_06_ke_thua_java.thuc_hanh.bai_he_cac_doi_tuong_hinh_hoc.Shape">
+      <point x="0.0" y="-92.0" />
+      <point x="277.0" y="231.0" />
+      <point x="223.75" y="231.0" />
+      <point x="42.25" y="103.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.999442896935933" x="110.28638920287915" y="267.159977703456" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
