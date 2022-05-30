@@ -1,8 +1,8 @@
 package _06_ke_thua_java.bai_tap.bai_lop_circle_va_cylinder;
 
 public class Circle {
-    protected double radius;
-    protected String color;
+    private double radius;
+    private String color;
 
     public Circle(double radius, String color) {
         this.radius = radius;
@@ -26,14 +26,14 @@ public class Circle {
     }
 
     public double getArea() {
-        return getRadius() * getRadius() * Math.PI;
+        return radius * radius * Math.PI;
     }
 
     @Override
     public String toString() {
         return "Circle{" +
-                "radius=" + getRadius() +
-                ", color='" + getColor() + '\'' +
+                "radius=" + radius +
+                ", color='" + color + '\'' +
                 '}';
     }
 }

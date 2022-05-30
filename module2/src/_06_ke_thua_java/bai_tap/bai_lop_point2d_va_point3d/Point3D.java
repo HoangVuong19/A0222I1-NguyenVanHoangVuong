@@ -20,20 +20,19 @@ public class Point3D extends Point2D {
     }
 
     public void setXYZ(float x, float y, float z) {
-        super.x = x;
-        super.y = y;
+        setXY(x, y);
         this.z = z;
     }
 
     public float[] getXYZ() {
-        float[] result = {getX(), getY(), getZ()};
+        float[] result = {getX(), getY(), z};
         return result;
     }
 
     @Override
     public String toString() {
         return "Point3D{" +
-                "z=" + getZ() +
+                "z=" + z +
                 ", x=" + getX() +
                 ", y=" + getY() +
                 '}';

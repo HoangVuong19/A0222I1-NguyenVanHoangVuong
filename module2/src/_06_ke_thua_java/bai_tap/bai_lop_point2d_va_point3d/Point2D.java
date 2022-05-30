@@ -1,8 +1,8 @@
 package _06_ke_thua_java.bai_tap.bai_lop_point2d_va_point3d;
 
 public class Point2D {
-    protected float x = 0.0f;
-    protected float y = 0.0f;
+    private float x = 0.0f;
+    private float y = 0.0f;
 
     public Point2D(float x, float y) {
         this.x = x;
@@ -34,15 +34,15 @@ public class Point2D {
     }
 
     public float[] getXY() {
-        float[] result = {getX(), getY()};
+        float[] result = {x, y};
         return result;
     }
 
     @Override
     public String toString() {
         return "Point2D{" +
-                "x=" + getX() +
-                ", y=" + getY() +
+                "x=" + x +
+                ", y=" + y +
                 '}';
     }
 

@@ -35,7 +35,7 @@ public class MoveablePoint extends Point {
     }
 
     public float[] getSpeed() {
-        float[] result = {getXSpeed(), getYSpeed()};
+        float[] result = {xSpeed, ySpeed};
         return result;
     }
 
@@ -44,8 +44,8 @@ public class MoveablePoint extends Point {
         return "MoveablePoint{" +
                 "x=" + getX() +
                 ", y=" + getY() +
-                " (Speed)=(" + getXSpeed() +
-                "," + getYSpeed() + ") " +
+                " (Speed)=(" + xSpeed +
+                "," + ySpeed + ") " +
                 '}';
     }
 

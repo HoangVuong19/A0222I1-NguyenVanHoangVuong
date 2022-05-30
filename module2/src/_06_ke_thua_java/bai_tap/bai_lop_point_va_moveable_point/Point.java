@@ -1,8 +1,8 @@
 package _06_ke_thua_java.bai_tap.bai_lop_point_va_moveable_point;
 
 public class Point {
-    protected float x = 0.0f;
-    protected float y = 0.0f;
+    private float x = 0.0f;
+    private float y = 0.0f;
 
     public Point(float x, float y) {
         this.x = x;
@@ -34,15 +34,15 @@ public class Point {
     }
 
     public float[] getXY() {
-        float[] result = {getX(), getY()};
+        float[] result = {x, y};
         return result;
     }
 
     @Override
     public String toString() {
         return "Point{" +
-                "x=" + getX() +
-                ", y=" + getY() +
+                "x=" + x +
+                ", y=" + y +
                 '}';
     }
 }
