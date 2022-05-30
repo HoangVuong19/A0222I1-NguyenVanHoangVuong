@@ -17,15 +17,15 @@ public class Cylinder extends Circle {
     }
 
     public double getVolume() {
-        return getRadius() * getRadius() * height * Math.PI;
+        return getRadius() * getRadius() * getHeight() * Math.PI;
     }
 
     @Override
     public String toString() {
         return "Cylinder{" +
-                "height=" + height +
-                ", radius=" + radius +
-                ", color='" + color + '\'' +
+                "height=" + getHeight() +
+                ", radius=" + getRadius() +
+                ", color='" + getColor() + '\'' +
                 '}';
     }
 }
