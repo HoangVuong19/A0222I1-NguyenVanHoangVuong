@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible</OriginalElement>
+  <nodes>
+    <node x="109.0" y="116.0">_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Fruit</node>
+    <node x="132.75" y="0.0">_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Edible</node>
+    <node x="323.25" y="0.0">_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Animal</node>
+    <node x="0.0" y="230.0">_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Apple</node>
+    <node x="391.0" y="115.0">_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Tiger</node>
+    <node x="217.0" y="104.0">_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Chicken</node>
+    <node x="163.0" y="230.0">_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Orange</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Tiger" target="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Animal">
+      <point x="0.0" y="-27.0" />
+      <point x="468.0" y="79.0" />
+      <point x="438.75" y="79.0" />
+      <point x="38.5" y="27.0" />
+    </edge>
+    <edge source="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Apple" target="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Fruit">
+      <point x="0.0" y="-27.0" />
+      <point x="71.5" y="205.0" />
+      <point x="131.0" y="205.0" />
+      <point x="-22.0" y="26.0" />
+    </edge>
+    <edge source="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Orange" target="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Fruit">
+      <point x="0.0" y="-27.0" />
+      <point x="234.5" y="205.0" />
+      <point x="175.0" y="205.0" />
+      <point x="22.0" y="26.0" />
+    </edge>
+    <edge source="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Chicken" target="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Animal">
+      <point x="38.5" y="-38.0" />
+      <point x="332.5" y="79.0" />
+      <point x="361.75" y="79.0" />
+      <point x="-38.5" y="27.0" />
+    </edge>
+    <edge source="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Fruit" target="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Edible">
+      <point x="0.0" y="-26.0" />
+      <point x="153.0" y="79.0" />
+      <point x="168.5" y="79.0" />
+      <point x="-35.75" y="27.0" />
+    </edge>
+    <edge source="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Chicken" target="_07_abstract_class_interface_java.thuc_hanh.bai_animal_va_interface_edible.Edible">
+      <point x="-38.5" y="-38.0" />
+      <point x="255.5" y="79.0" />
+      <point x="240.0" y="79.0" />
+      <point x="35.75" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="190.0" y="267.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
