@@ -1,74 +1,58 @@
 package _08_clean_code_and_refactoring_java.bai_tap.bai_refactoring;
 
 public class TennisGame {
-    public static String getScore(int player1Point, int player2Point) {
-        String Score = "";
 
-        if (player1Point == player2Point) {
-            switch (player1Point) {
-                case 0:
-                    Score = "Love-All";
-                    break;
-                case 1:
-                    Score = "Fifteen-All";
-                    break;
-                case 2:
-                    Score = "Thirty-All";
-                    break;
-                case 3:
-                    Score = "Forty-All";
-                    break;
-                default:
-                    Score = "Deuce";
-                    break;
-            }
-        } else if (player1Point >= 4 || player2Point >= 4) {
-            Score = getMinusResult(player1Point, player2Point);
-        } else {
-            Score = getTempScore(player1Point, player2Point, Score);
+    //region constant
+    private static final String ZERO_SCORE = "Love";
+    private static final String ONE_SCORE = "Fifteen";
+    private static final String TWO_SCORE = "Thirty";
+    private static final String THREE_SCORE = "Forty";
+    private static final String ALL = "All";
+    private static final String WIN = "Win";
+    private static final String DEUCE = "Deuce";
+    private static final String ADVANTAGE = "Advantage";
+
+
+    public static String getScore(int playerOneScore, int playerTwoScore) {
+
+        if (playerOneScore == playerTwoScore) {
+            return displayDeuce(playerOneScore) + "-" + ALL;
         }
-        return Score;
+        if (playerOneScore >= 4 || playerTwoScore >= 4) {
+            return displayAdvantageOrWin(playerOneScore, playerTwoScore);
+        }
+        return displayScore(playerOneScore, playerTwoScore);
     }
 
-    private static String getMinusResult(int player1Point, int player2Point) {
-        String Score;
-        int minusResult = player1Point - player2Point;
+    private static String displayDeuce(int score) {
+        switch (score) {
+            case 0:
+                return ZERO_SCORE;
+            case 1:
+                return ONE_SCORE;
+            case 2:
+                return TWO_SCORE;
+            case 3:
+                return THREE_SCORE;
+            default:
+                return DEUCE;
+        }
+    }
+
+    private static String displayAdvantageOrWin(int playerOneScore, int playerTwoScore) {
+        int minusResult = playerOneScore - playerTwoScore;
         if (minusResult == 1) {
-            Score = "Advantage player1";
+            return ADVANTAGE + " playerOne";
         } else if (minusResult == -1) {
-            Score = "Advantage player2";
+            return ADVANTAGE + " playerTwo";
         } else if (minusResult >= 2) {
-            Score = "Win for player1";
+            return WIN + " playerOne";
         } else {
-            Score = "Win for player2";
+            return WIN + " playerTwo";
         }
-        return Score;
     }
 
-    private static String getTempScore(int player1Point, int player2Point, String score) {
-        int tempScore = 0;
-        for (int i = 1; i < 3; i++) {
-            if (i == 1) {
-                tempScore = player1Point;
-            } else {
-                score += "-";
-                tempScore = player2Point;
-            }
-            switch (tempScore) {
-                case 0:
-                    score += "Love";
-                    break;
-                case 1:
-                    score += "Fifteen";
-                    break;
-                case 2:
-                    score += "Thirty";
-                    break;
-                case 3:
-                    score += "Forty";
-                    break;
-            }
-        }
-        return score;
+    private static String displayScore(int playerOneScore, int playerTwoScore) {
+        return displayDeuce(playerOneScore) + "-" + displayDeuce(playerTwoScore);
     }
 }
