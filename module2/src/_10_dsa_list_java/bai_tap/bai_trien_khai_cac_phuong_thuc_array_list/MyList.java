@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class MyList<E> {
     private int size = 0;
     private static final int DEFAULT_CAPACITY = 10;
-    private Object[] elements;
+    private E[] elements;
+
 
     public MyList() {
         elements = (E[]) new Object[DEFAULT_CAPACITY];
@@ -16,25 +17,80 @@ public class MyList<E> {
     }
 
     public void add(int index, E element) {
-        if (index < 0 || index > elements.length - 1) {
-            System.out.println("Invalid input index");
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + index);
         }
-        elements[index] = element;
-        if (elements[index] == null) {
-            size++;
-        }
+
         ensureCapacity();
 
+        for (int i = size; i > index; i--) {
+            elements[i] = elements[i - 1];
+        }
+
+        elements[index] = element;
+        size++;
     }
 
+    public E remove(int index) {
+        E e = elements[index];
+
+        for (int i = index; i < size - 1; i++) {
+            elements[i] = elements[i + 1];
+        }
+
+        elements[size - 1] = null;
+        size--;
+        return e;
+    }
+
+    public int size() {
+        return size;
+    }
+
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    public boolean contains(E e) {
+        for (int i = 0; i < size; i++) {
+            if (elements[i].equals(e)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int indexOf(E e) {
+        for (int i = 0; i < size; i++) {
+            if (elements[i].equals(e)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public boolean add(E e) {
+        add(size, e);
+        return true;
+    }
 
     private void ensureCapacity() {
         if (size >= elements.length) {
-            elements = Arrays.copyOf(elements, elements.length * 2);
+            elements = Arrays.copyOf(elements, elements.length * 3 / 2);
         }
     }
 
-    public int getSize() {
-        return size;
+    public E get(int index) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + index);
+        }
+        return elements[index];
     }
+
+    public void clear() {
+        size = 0;
+        elements = (E[]) new Object[DEFAULT_CAPACITY];
+    }
+
+
 }
