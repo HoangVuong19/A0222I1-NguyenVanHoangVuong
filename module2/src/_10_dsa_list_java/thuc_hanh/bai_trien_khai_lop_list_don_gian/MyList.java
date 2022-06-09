@@ -19,8 +19,7 @@ public class MyList<E> {
     }
 
     private void ensureCapa() {
-        int newSize = elements.length * 2;
-        elements = Arrays.copyOf(elements, newSize);
+        elements = Arrays.copyOf(elements, elements.length * 2);
     }
 
     public E get(int i) {

@@ -8,8 +8,9 @@ public class MyLinkedListTest {
         ll.addFirst(12);
         ll.addFirst(13);
 
-        ll.add(4, 9);
-        ll.add(4, 9);
+        ll.add(3,9);
+        ll.add(4,9);
+
         ll.printList();
     }
 }

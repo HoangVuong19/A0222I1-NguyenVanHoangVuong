@@ -4,56 +4,56 @@ public class MyLinkedList {
     private Node head;
     private int numNodes;
 
-    public MyLinkedList(Object data) {
-        head = new Node(data);
+    public MyLinkedList(Object element) {
+        head = new Node(element);
     }
 
     private class Node {
         private Node next;
-        private Object data;
+        private Object elements;
 
         public Node(Object data) {
-            this.data = data;
+            this.elements = data;
         }
 
-        public Object getData() {
-            return this.data;
+        public Object getElements() {
+            return this.elements;
         }
     }
 
-    public void add(int index, Object data) {
-        Node temp = head;
-        Node holder;
+    public void add(int index, Object element) {
+        Node current = head;
+        Node temp;
 
-        for (int i = 0; i < index - 1 && temp.next != null; i++) {
-            temp = temp.next;
+        for (int i = 0; i < index - 1 && current.next != null; i++) {
+            current = current.next;
         }
-        holder = temp.next;
-        temp.next = new Node(data);
-        temp.next.next = holder;
+        temp = current.next;
+        current.next = new Node(element);
+        current.next.next = temp;
         numNodes++;
     }
 
-    public void addFirst(Object data) {
-        Node temp = head;
-        head = new Node(data);
-        head.next = temp;
+    public void addFirst(Object element) {
+        Node current = head;
+        head = new Node(element);
+        head.next = current;
         numNodes++;
     }
 
     public Node get(int index) {
-        Node temp = head;
+        Node current = head;
         for (int i = 0; i < index; i++) {
-            temp = temp.next;
+            current = current.next;
         }
-        return temp;
+        return current;
     }
 
     public void printList() {
-        Node temp = head;
-        while (temp != null) {
-            System.out.println(temp.data);
-            temp = temp.next;
+        Node current = head;
+        while (current != null) {
+            System.out.println(current.elements);
+            current = current.next;
         }
     }
 }
