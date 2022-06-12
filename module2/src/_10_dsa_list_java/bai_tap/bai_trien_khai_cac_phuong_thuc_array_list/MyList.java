@@ -5,72 +5,75 @@ import java.util.Arrays;
 public class MyList<E> {
     private int size = 0;
     private static final int DEFAULT_CAPACITY = 10;
-    private E[] elements;
+    private Object[] elements;
 
 
     public MyList() {
-        elements = (E[]) new Object[DEFAULT_CAPACITY];
+        elements = new Object[DEFAULT_CAPACITY];
     }
 
     public MyList(int capacity) {
-        elements = (E[]) new Object[capacity];
+        if (capacity > 0) {
+            elements = new Object[capacity];
+        } else {
+            throw new IllegalArgumentException("capacity error:" + capacity);
+        }
     }
 
     public void add(int index, E element) {
-        if (index < 0 || index > size) {
+        if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size " + index);
         }
 
         ensureCapacity();
-
-        for (int i = size; i > index; i--) {
+        for (int i = size + 1; i > index; i--) {
             elements[i] = elements[i - 1];
         }
-
         elements[index] = element;
         size++;
     }
 
     public E remove(int index) {
-        E e = elements[index];
-
         for (int i = index; i < size - 1; i++) {
             elements[i] = elements[i + 1];
         }
 
-        elements[size - 1] = null;
+        elements[size] = null;
         size--;
-        return e;
+        return (E) elements[index];
     }
 
     public int size() {
         return size;
     }
 
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
-
-    public boolean contains(E e) {
-        for (int i = 0; i < size; i++) {
-            if (elements[i].equals(e)) {
-                return true;
-            }
+    public MyList<E> clone() {
+        if (size == 0) {
+            throw new NullPointerException("arraylist is null");
+        } else {
+            MyList<E> retList = new MyList<>();
+            retList.elements = Arrays.copyOf(elements, size);
+            retList.size = this.size;
+            return retList;
         }
-        return false;
     }
 
-    public int indexOf(E e) {
+    public boolean contains(E element) {
+        return indexOf(element) > 0;
+    }
+
+    public int indexOf(E element) {
         for (int i = 0; i < size; i++) {
-            if (elements[i].equals(e)) {
+            if (elements[i].equals(element)) {
                 return i;
             }
         }
         return -1;
     }
 
-    public boolean add(E e) {
-        add(size, e);
+    public boolean add(E element) {
+        elements[size] = element;
+        size++;
         return true;
     }
 
@@ -81,16 +84,16 @@ public class MyList<E> {
     }
 
     public E get(int index) {
-        if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size " + index);
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("Index: " + index);
         }
-        return elements[index];
+        return (E) elements[index];
     }
 
     public void clear() {
         size = 0;
-        elements = (E[]) new Object[DEFAULT_CAPACITY];
+        for (int i = 0; i < elements.length; i++) {
+            elements[i] = null;
+        }
     }
-
-
 }
