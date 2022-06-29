@@ -19,7 +19,7 @@ public class ReadFileExample {
             if (!file.exists()) {
                 throw new FileNotFoundException();
             }
-
+            //BufferedReader br = new BufferedReader(new FileReader(file));
             BufferedReader br = Files.newBufferedReader(file.toPath());
             String line;
             int sum = 0;
