@@ -18,20 +18,12 @@ public class ReadFile {
     }
 
     public static void readCsvLine(String path) throws IOException {
-        BufferedReader br = null;
-        try {
-            Reader reader = new FileReader(path);
-            br = new BufferedReader(reader);
-            String line;
-            while ((line = br.readLine()) != null) {
-                printNation(parseCsvLine(line));
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (br != null)
-                br.close();
+        BufferedReader br = new BufferedReader(new FileReader(path));
+        String line;
+        while ((line = br.readLine()) != null) {
+            printNation(parseCsvLine(line));
         }
+        br.close();
     }
 
     public static List<String> parseCsvLine(String csvLine) {

@@ -18,23 +18,14 @@ public class CopyFileText {
     }
 
     public static void readAndWriteFile(String inputPath, String outputPath) throws IOException {
-        BufferedReader br = null;
-        BufferedWriter bw = null;
-        try {
-            Reader reader = new FileReader(inputPath);
-            Writer writer = new FileWriter(outputPath);
-            br = new BufferedReader(reader);
-            bw = new BufferedWriter(writer);
+        BufferedReader br = new BufferedReader(new FileReader(inputPath));
+        BufferedWriter bw = new BufferedWriter(new FileWriter(outputPath));
 
-            String line;
-            while ((line = br.readLine()) != null) {
-                bw.write(line + "\n");
-            }
-        } catch (FileNotFoundException e) {
-            System.out.println("Không tìm thấy file!!!");
-        } finally {
-            if (br != null) br.close();
-            if (bw != null) bw.close();
+        String line;
+        while ((line = br.readLine()) != null) {
+            bw.write(line + "\n");
         }
+        br.close();
+        bw.close();
     }
 }

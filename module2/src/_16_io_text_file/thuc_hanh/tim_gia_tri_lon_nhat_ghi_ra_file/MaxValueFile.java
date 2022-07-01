@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MaxValueFile {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("Nhập đường dẫn file: ");
         Scanner sc = new Scanner(System.in);
         String path = sc.nextLine();
