@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/furamaResort/furamaResort.iml" filepath="$PROJECT_DIR$/furamaResort/furamaResort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/furamaresort/furamaresort.iml" filepath="$PROJECT_DIR$/furamaresort/furamaresort.iml" />
       <module fileurl="file://$PROJECT_DIR$/module2.iml" filepath="$PROJECT_DIR$/module2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/phonemanager/phonemanager.iml" filepath="$PROJECT_DIR$/phonemanager/phonemanager.iml" />
     </modules>
   </component>
 </project>

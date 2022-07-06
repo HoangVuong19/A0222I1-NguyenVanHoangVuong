@@ -19,9 +19,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5670a677-1ab8-49e9-871a-6ec0a0492846" name="Default Changelist" comment="nop bai ngay 01-07">
-      <change afterPath="$PROJECT_DIR$/furamaResort/src/controllers/FuramaController.java" afterDir="false" />
+    <list default="true" id="5670a677-1ab8-49e9-871a-6ec0a0492846" name="Default Changelist" comment="nop bai ngay 04-07">
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/models/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/models/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/models/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/models/Facility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/models/House.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/models/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/models/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/models/Villa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/BookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/ContactService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/FacilityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/impl/BookingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/impl/ContactServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furamaresort/src/services/impl/FacilityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phonemanager/phonemanager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phonemanager/src/models/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furamaResort/furamaResort.iml" beforeDir="false" afterPath="$PROJECT_DIR$/furamaresort/furamaresort.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furamaResort/src/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/furamaresort/src/controllers/FuramaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +57,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Kotlin File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -66,39 +90,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../module1" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.FuramaController (1)">
-    <configuration name="ClassExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_18_string_regex.bai_tap.bai_validate_ten_lop_hoc.ClassExample" />
+  <component name="RunManager" selected="Application.FuramaController">
+    <configuration name="EmailExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_18_string_regex.thuc_hanh.bai_validate_email.EmailExample" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_18_string_regex.bai_tap.bai_validate_ten_lop_hoc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CrawlNews" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_18_string_regex.bai_tap.bai_crawl_tin_tuc.CrawlNews" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_18_string_regex.bai_tap.bai_crawl_tin_tuc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FuramaController (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="controllers.FuramaController" />
-      <module name="furamaResort" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="controllers.*" />
+          <option name="PATTERN" value="_18_string_regex.thuc_hanh.bai_validate_email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +105,11 @@
       </method>
     </configuration>
     <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="furamaResort.controllers.FuramaController" />
-      <module name="module2" />
+      <option name="MAIN_CLASS_NAME" value="controllers.FuramaController" />
+      <module name="furamaresort" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="furamaResort.controllers.*" />
+          <option name="PATTERN" value="controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,13 +130,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TypeObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_19_io_bonus.doc_ghi_file_binary.TypeObject" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_19_io_bonus.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypeObject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_19_io_bonus.doc_ghi_file_text.TypeObject" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_19_io_bonus.doc_ghi_file_text.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypeText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_19_io_bonus.doc_ghi_file_text.TypeText" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_19_io_bonus.doc_ghi_file_text.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FuramaController (1)" />
-        <item itemvalue="Application.FuramaController" />
-        <item itemvalue="Application.CrawlNews" />
-        <item itemvalue="Application.ClassExample" />
+        <item itemvalue="Application.TypeText" />
+        <item itemvalue="Application.TypeObject" />
         <item itemvalue="Application.PhoneExample" />
+        <item itemvalue="Application.FuramaController" />
+        <item itemvalue="Application.EmailExample" />
       </list>
     </recent_temporary>
   </component>
@@ -257,21 +294,19 @@
       <workItem from="1656673014397" duration="7319000" />
       <workItem from="1656680503616" duration="217000" />
       <workItem from="1656680762212" duration="417000" />
-      <workItem from="1656732036718" duration="1826000" />
-    </task>
-    <task id="LOCAL-00003" summary="nop bai ngay 18-05">
-      <created>1652873878908</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1652873878908</updated>
-    </task>
-    <task id="LOCAL-00004" summary="nop bai ngay 18-05">
-      <created>1652875024251</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1652875024251</updated>
+      <workItem from="1656732036718" duration="5028000" />
+      <workItem from="1656747340537" duration="3600000" />
+      <workItem from="1656841018615" duration="649000" />
+      <workItem from="1656932786527" duration="10566000" />
+      <workItem from="1656990514015" duration="1047000" />
+      <workItem from="1656992840974" duration="2134000" />
+      <workItem from="1657003920907" duration="3592000" />
+      <workItem from="1657008358164" duration="135000" />
+      <workItem from="1657008545418" duration="39000" />
+      <workItem from="1657008629527" duration="77000" />
+      <workItem from="1657008752026" duration="15000" />
+      <workItem from="1657008812639" duration="1245000" />
+      <workItem from="1657070320772" duration="4284000" />
     </task>
     <task id="LOCAL-00005" summary="nop bai ngay 18-05">
       <created>1652876845512</created>
@@ -602,7 +637,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656661325628</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="done task 1 date 02-07">
+      <created>1656734568163</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1656734568163</updated>
+    </task>
+    <task id="LOCAL-00053" summary="nop bai ngay 04-07">
+      <created>1656941735282</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1656941735283</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -645,7 +694,9 @@
     <MESSAGE value="nop bai ngay 27-06" />
     <MESSAGE value="nop bai ngay 29-06" />
     <MESSAGE value="nop bai ngay 01-07" />
-    <option name="LAST_COMMIT_MESSAGE" value="nop bai ngay 01-07" />
+    <MESSAGE value="done task 1 date 02-07" />
+    <MESSAGE value="nop bai ngay 04-07" />
+    <option name="LAST_COMMIT_MESSAGE" value="nop bai ngay 04-07" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
