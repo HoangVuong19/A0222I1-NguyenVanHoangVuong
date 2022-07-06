@@ -17,9 +17,4 @@ public class CustomerServiceImpl implements CustomerService {
     public void edit() {
 
     }
-
-    @Override
-    public void delete() {
-
-    }
 }
