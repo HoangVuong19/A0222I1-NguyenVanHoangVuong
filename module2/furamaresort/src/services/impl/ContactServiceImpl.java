@@ -13,6 +13,9 @@ public class ContactServiceImpl implements ContactService {
 
     }
 
+    @Override
+    public void edit() {
 
+    }
 
 }

@@ -1,5 +1,5 @@
 package services;
 
-public interface EmployeeService extends Service{
-    void edit();
+public interface EmployeeService extends Service {
+
 }

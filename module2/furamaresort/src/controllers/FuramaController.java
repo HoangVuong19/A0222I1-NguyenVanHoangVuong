@@ -2,6 +2,7 @@ package controllers;
 
 import services.impl.CustomerServiceImpl;
 import services.impl.EmployeeServiceImpl;
+import services.impl.FacilityServiceImpl;
 
 import java.util.Scanner;
 
@@ -117,6 +118,7 @@ public class FuramaController {
     }
 
     public static void facilityManagement() {
+        FacilityServiceImpl facilityServiceImpl = new FacilityServiceImpl();
         String choose = "";
         loop:
         while (true) {
@@ -131,13 +133,45 @@ public class FuramaController {
             choose = scanner.nextLine();
             switch (choose) {
                 case "1":
-
+                    facilityServiceImpl.display();
                     break;
                 case "2":
-
+                    addNewFacility();
                     break;
                 case "3":
+                    facilityServiceImpl.displayMaintenance();
+                    break;
+                case "4":
+                    break loop;
+                default:
+                    System.out.println("Please choose the correct option!!!");
+            }
+        }
+    }
 
+    public static void addNewFacility() {
+        FacilityServiceImpl facilityServiceImpl = new FacilityServiceImpl();
+        String choose = "";
+        loop:
+        while (true) {
+            System.out.println("Add new facility-------------------------");
+            System.out.println(
+                    "1. Add New Villa\n" +
+                            "2. Add new House\n" +
+                            "3. Add new Room\n" +
+                            "4. Back to menu"
+            );
+            System.out.println("Choose please: ");
+            choose = scanner.nextLine();
+            switch (choose) {
+                case "1":
+                    facilityServiceImpl.addNewVilla();
+                    break;
+                case "2":
+                    facilityServiceImpl.addNewHouse();
+                    break;
+                case "3":
+                    facilityServiceImpl.addNewRoom();
                     break;
                 case "4":
                     break loop;
