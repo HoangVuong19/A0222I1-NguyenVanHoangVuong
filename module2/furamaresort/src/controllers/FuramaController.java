@@ -1,5 +1,6 @@
 package controllers;
 
+import services.impl.CustomerServiceImpl;
 import services.impl.EmployeeServiceImpl;
 
 import java.util.Scanner;
@@ -84,6 +85,7 @@ public class FuramaController {
     }
 
     public static void customerManagement() {
+        CustomerServiceImpl customerServiceImpl = new CustomerServiceImpl();
         String choose = "";
         loop:
         while (true) {
@@ -98,13 +100,13 @@ public class FuramaController {
             choose = scanner.nextLine();
             switch (choose) {
                 case "1":
-
+                    customerServiceImpl.display();
                     break;
                 case "2":
-
+                    customerServiceImpl.add();
                     break;
                 case "3":
-
+                    customerServiceImpl.edit();
                     break;
                 case "4":
                     break loop;
