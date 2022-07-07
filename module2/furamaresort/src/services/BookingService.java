@@ -1,4 +1,7 @@
 package services;
 
-public interface BookingService extends Service{
+public interface BookingService {
+    void add();
+
+    void displayList();
 }

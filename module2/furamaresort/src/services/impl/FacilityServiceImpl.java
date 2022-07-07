@@ -23,8 +23,8 @@ public class FacilityServiceImpl implements FacilityService {
 
     @Override
     public void displayMaintenance() {
-        for (Map.Entry<Facility, Integer> element: facilityIntegerMap.entrySet()) {
-            if (element.getValue() >= 3){
+        for (Map.Entry<Facility, Integer> element : facilityIntegerMap.entrySet()) {
+            if (element.getValue() >= 3) {
                 System.out.println("Service: " + element.getKey() + " đang bảo trì");
             }
         }
@@ -32,6 +32,8 @@ public class FacilityServiceImpl implements FacilityService {
 
     @Override
     public void addNewVilla() {
+        System.out.println("Nhập id Villa: ");
+        String id = sc.nextLine();
         System.out.println("Nhập tên Villa: ");
         String name = sc.nextLine();
         System.out.println("Nhập diện tích sử dụng: ");
@@ -49,7 +51,7 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.println("Nhập số tầng: ");
         int numberOfStoreys = Integer.parseInt(sc.nextLine());
 
-        Villa villa = new Villa(name, areaUsed, price, maximumPeople, rentType, standardRooms, areaPool, numberOfStoreys);
+        Villa villa = new Villa(id, name, areaUsed, price, maximumPeople, rentType, standardRooms, areaPool, numberOfStoreys);
         facilityIntegerMap.put(villa, 0);
 
         System.out.println("Thêm villa thành công!!");
@@ -57,6 +59,8 @@ public class FacilityServiceImpl implements FacilityService {
 
     @Override
     public void addNewHouse() {
+        System.out.println("Nhập id House: ");
+        String id = sc.nextLine();
         System.out.println("Nhập tên House: ");
         String name = sc.nextLine();
         System.out.println("Nhập diện tích sử dụng: ");
@@ -72,7 +76,7 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.println("Nhập số tầng: ");
         int numberOfStoreys = Integer.parseInt(sc.nextLine());
 
-        House house = new House(name, areaUsed, price, maximumPeople, rentType, standardRooms, numberOfStoreys);
+        House house = new House(id, name, areaUsed, price, maximumPeople, rentType, standardRooms, numberOfStoreys);
         facilityIntegerMap.put(house, 0);
 
         System.out.println("Thêm House thành công!!");
@@ -80,6 +84,8 @@ public class FacilityServiceImpl implements FacilityService {
 
     @Override
     public void addNewRoom() {
+        System.out.println("Nhập id Room: ");
+        String id = sc.nextLine();
         System.out.println("Nhập tên Room: ");
         String name = sc.nextLine();
         System.out.println("Nhập diện tích sử dụng: ");
@@ -93,9 +99,13 @@ public class FacilityServiceImpl implements FacilityService {
         System.out.println("Nhập dịch vụ miễn phí đi kèm: ");
         String freeService = sc.nextLine();
 
-        Room room = new Room(name, areaUsed, price, maximumPeople, rentType, freeService);
+        Room room = new Room(id, name, areaUsed, price, maximumPeople, rentType, freeService);
         facilityIntegerMap.put(room, 0);
 
         System.out.println("Thêm Room thành công!!");
+    }
+
+    public Map<Facility, Integer> getFacilityIntegerMap() {
+        return facilityIntegerMap;
     }
 }

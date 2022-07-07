@@ -84,8 +84,12 @@ public class CustomerServiceImpl implements CustomerService {
                 checkId++;
             }
         }
-        if (checkId == 0){
+        if (checkId == 0) {
             System.out.println("Không tìm thấy id!!");
         }
+    }
+
+    public List<Customer> getCustomerList() {
+        return customerList;
     }
 }

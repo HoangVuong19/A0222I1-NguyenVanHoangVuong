@@ -1,48 +1,45 @@
 package models;
 
+import java.time.LocalDate;
+
 public class Booking {
-    private String id;
-    private String startDate;
-    private String endDate;
+    private int id;
+    private LocalDate startDate;
+    private LocalDate endDate;
     private String customerId;
     private String facilityName;
     private String serviceType;
-    private boolean isContract;
 
-    public Booking() {
-    }
-
-    public Booking(String id, String startDate, String endDate, String customerId, String facilityName, String serviceType, boolean isContract) {
+    public Booking(int id, LocalDate startDate, LocalDate endDate, String customerId, String facilityName, String serviceType) {
         this.id = id;
         this.startDate = startDate;
         this.endDate = endDate;
         this.customerId = customerId;
         this.facilityName = facilityName;
         this.serviceType = serviceType;
-        this.isContract = isContract;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getStartDate() {
+    public LocalDate getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(String startDate) {
+    public void setStartDate(LocalDate startDate) {
         this.startDate = startDate;
     }
 
-    public String getEndDate() {
+    public LocalDate getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(String endDate) {
+    public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     }
 
@@ -70,13 +67,6 @@ public class Booking {
         this.serviceType = serviceType;
     }
 
-    public boolean isContract() {
-        return isContract;
-    }
-
-    public void setContract(boolean contract) {
-        isContract = contract;
-    }
 
     @Override
     public String toString() {
@@ -87,7 +77,6 @@ public class Booking {
                 ", customerId='" + customerId + '\'' +
                 ", facilityName='" + facilityName + '\'' +
                 ", serviceType='" + serviceType + '\'' +
-                ", isContract=" + isContract +
                 '}';
     }
 }

@@ -1,6 +1,7 @@
 package models;
 
 public abstract class Facility {
+    private String id;
     private String name;
     private double areaUsed;
     private int price;
@@ -10,12 +11,21 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(String name, double areaUsed, int price, int maximumPeople, String rentType) {
+    public Facility(String id, String name, double areaUsed, int price, int maximumPeople, String rentType) {
+        this.id = id;
         this.name = name;
         this.areaUsed = areaUsed;
         this.price = price;
         this.maximumPeople = maximumPeople;
         this.rentType = rentType;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -61,11 +71,12 @@ public abstract class Facility {
     @Override
     public String toString() {
         return
-                "name='" + name + '\'' +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
                 ", areaUsed=" + areaUsed +
                 ", price=" + price +
                 ", maximumPeople=" + maximumPeople +
                 ", rentType='" + rentType + '\'' +
-                '}';
+                ',';
     }
 }

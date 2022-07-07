@@ -1,8 +1,6 @@
 package controllers;
 
-import services.impl.CustomerServiceImpl;
-import services.impl.EmployeeServiceImpl;
-import services.impl.FacilityServiceImpl;
+import services.impl.*;
 
 import java.util.Scanner;
 
@@ -182,6 +180,8 @@ public class FuramaController {
     }
 
     public static void bookingManagement() {
+        BookingServiceImpl bookingServiceImpl = new BookingServiceImpl();
+        ContractServiceImpl contractServiceImpl = new ContractServiceImpl();
         String choose = "";
         loop:
         while (true) {
@@ -198,19 +198,19 @@ public class FuramaController {
             choose = scanner.nextLine();
             switch (choose) {
                 case "1":
-
+                    bookingServiceImpl.add();
                     break;
                 case "2":
-
+                    bookingServiceImpl.displayList();
                     break;
                 case "3":
-
+                    contractServiceImpl.add();
                     break;
                 case "4":
-
+                    contractServiceImpl.display();
                     break;
                 case "5":
-
+                    contractServiceImpl.edit();
                     break;
                 case "6":
                     break loop;

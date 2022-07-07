@@ -2,7 +2,7 @@ package models;
 
 public class Contract {
     private String contractId;
-    private String bookingId;
+    private int bookingId;
     private double downPayment;
     private double totalPayment;
     private String customerId;
@@ -10,7 +10,7 @@ public class Contract {
     public Contract() {
     }
 
-    public Contract(String contractId, String bookingId, double downPayment, double totalPayment, String customerId) {
+    public Contract(String contractId, int bookingId, double downPayment, double totalPayment, String customerId) {
         this.contractId = contractId;
         this.bookingId = bookingId;
         this.downPayment = downPayment;
@@ -26,11 +26,11 @@ public class Contract {
         this.contractId = contractId;
     }
 
-    public String getBookingId() {
+    public int getBookingId() {
         return bookingId;
     }
 
-    public void setBookingId(String bookingId) {
+    public void setBookingId(int bookingId) {
         this.bookingId = bookingId;
     }
 
