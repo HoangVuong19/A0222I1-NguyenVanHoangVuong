@@ -55,30 +55,4 @@ public class TypeObject {
             System.out.println(st);
         }
     }
-
-//    public static void readFileCsv(String path) throws IOException {
-//        BufferedReader br = new BufferedReader(new FileReader(path));
-//        String line;
-//        while ((line = br.readLine()) != null) {
-//            DisplayCsvLine(parseCsvLine(line));
-//        }
-//        br.close();
-//    }
-//
-//    public static List<String> parseCsvLine(String csvLine) {
-//        List<String> result = new ArrayList<>();
-//        if (csvLine != null) {
-//            String[] splitData = csvLine.split(DELIMITER);
-//            Collections.addAll(result, splitData);
-//        }
-//        return result;
-//    }
-//
-//    private static void DisplayCsvLine(List<String> line) {
-//        List<Staff> staff = new ArrayList<>();
-//        staff.add(new Staff(Integer.parseInt(line.get(0)), line.get(1), line.get(2)));
-//        for (Staff st: staff) {
-//            System.out.println(st);
-//        }
-//    }
 }
