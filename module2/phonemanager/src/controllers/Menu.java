@@ -15,7 +15,6 @@ public class Menu {
         displayMainMenu();
     }
 
-
     private static final Scanner sc = new Scanner(System.in);
     private static final PhoneService phoneService = new PhoneService();
 

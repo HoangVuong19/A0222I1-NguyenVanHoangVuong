@@ -8,7 +8,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WriteAndRead {
+public class WriteAndReadFile {
     public static final String COMMA = ",";
 
     public void write(List<Phone> phones, String path, boolean isAppend) {
