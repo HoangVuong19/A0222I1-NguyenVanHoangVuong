@@ -48,5 +48,17 @@ public abstract class Phone {
         this.manufacturer = manufacturer;
     }
 
+    @Override
+    public String toString() {
+        return
+                "id=" + id +
+                        ", name='" + name + '\'' +
+                        ", price=" + price +
+                        ", manufacturer='" + manufacturer + '\'' +
+                        ',';
+    }
 
+    public String toData(String delimiter) {
+        return id + delimiter + name + delimiter + price + delimiter + manufacturer;
+    }
 }
