@@ -24,7 +24,7 @@ public class FacilityServiceImpl implements FacilityService {
     @Override
     public void displayMaintenance() {
         for (Map.Entry<Facility, Integer> element : facilityIntegerMap.entrySet()) {
-            if (element.getValue() >= 3) {
+            if (element.getValue() >= 5) {
                 System.out.println("Service: " + element.getKey() + " đang bảo trì");
             }
         }
