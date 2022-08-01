@@ -27,7 +27,11 @@ FROM khach_hang kh
 	LEFT JOIN dich_vu dv on hd.ma_dich_vu= dv.ma_dich_vu
 	LEFT JOIN hop_dong_chi_tiet hct on hd.ma_hop_dong = hct.ma_hop_dong
     LEFT JOIN dich_vu_di_kem dvk on hct.ma_dich_vu_di_kem = dvk.ma_dich_vu_di_kem
-GROUP BY hd.ma_khach_hang;
+    LEFT JOIN (SELECT kh.ma_khach_hang as id, kh.ho_ten, sum(dv.chi_phi_thue) as price
+			   FROM khach_hang kh
+				JOIN hop_dong hd on kh.ma_khach_hang= hd.ma_khach_hang
+				JOIN dich_vu dv on hd.ma_dich_vu= dv.ma_dich_vu
+			   GROUP BY kh.ma_khach_hang) tmp on tmp.id = kh.ma_Khach_hang;
 
 -- 6.	Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ chưa từng được khách hàng thực hiện
 -- đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
