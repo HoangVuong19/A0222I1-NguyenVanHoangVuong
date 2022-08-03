@@ -1,0 +1,25 @@
+body{
+    padding: 5px;
+}
+.title{
+    font-family: Helvetica;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background: black;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    text-indent: 30px;
+    text-align: justify;
+}
