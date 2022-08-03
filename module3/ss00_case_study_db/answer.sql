@@ -20,18 +20,26 @@ ORDER BY solandat;
 -- 5.	Hiển thị ma_khach_hang, ho_ten, ten_loai_khach, ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, tong_tien 
 -- (Với tổng tiền được tính theo công thức như sau: Chi Phí Thuê + Số Lượng * Giá, với Số Lượng và Giá là từ bảng dich_vu_di_kem, hop_dong_chi_tiet) 
 -- cho tất cả các khách hàng đã từng đặt phòng. (những khách hàng nào chưa từng đặt phòng cũng phải hiển thị ra).
-SELECT kh.ma_khach_hang, kh.ho_ten, lk.ten_loai_khach, hd.ma_hop_dong, dv.ten_dich_vu, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc, hct.so_luong * dvk.gia + dv.chi_phi_thue as tong_tien
+SELECT kh.ma_khach_hang, kh.ho_ten, lk.ten_loai_khach, hd.ma_hop_dong, dv.ten_dich_vu, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc, (sum(dvdk.gia * hdct.so_luong) + tmp.gia_dv) tong_tien
 FROM khach_hang kh
-	LEFT JOIN loai_khach lk on lk.ma_loai_khach= kh.ma_loai_khach
-	LEFT JOIN hop_dong hd on hd.ma_khach_hang= kh.ma_khach_hang
-	LEFT JOIN dich_vu dv on hd.ma_dich_vu= dv.ma_dich_vu
-	LEFT JOIN hop_dong_chi_tiet hct on hd.ma_hop_dong = hct.ma_hop_dong
-    LEFT JOIN dich_vu_di_kem dvk on hct.ma_dich_vu_di_kem = dvk.ma_dich_vu_di_kem
-    LEFT JOIN (SELECT kh.ma_khach_hang as id, kh.ho_ten, sum(dv.chi_phi_thue) as price
-			   FROM khach_hang kh
-				JOIN hop_dong hd on kh.ma_khach_hang= hd.ma_khach_hang
-				JOIN dich_vu dv on hd.ma_dich_vu= dv.ma_dich_vu
-			   GROUP BY kh.ma_khach_hang) tmp on tmp.id = kh.ma_Khach_hang;
+    left JOIN loai_khach lk USING (ma_loai_khach)
+    left join hop_dong hd USING (ma_khach_hang)
+    left join dich_vu dv USING (ma_dich_vu)
+    left JOIN hop_dong_chi_tiet hdct USING (ma_hop_dong)
+    left join dich_vu_di_kem dvdk USING (ma_dich_vu_di_kem)
+    left JOIN (
+        SELECT
+            kh.ma_khach_hang as ma_khach_hang,
+            sum(dv.chi_phi_thue) as gia_dv
+        from
+            khach_hang kh
+            join hop_dong hd USING (ma_khach_hang)
+            join dich_vu dv USING (ma_dich_vu)
+        GROUP by
+            kh.ma_khach_hang
+    ) tmp USING (ma_khach_hang)
+GROUP by
+    kh.ma_khach_hang;
 
 -- 6.	Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ chưa từng được khách hàng thực hiện
 -- đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
@@ -64,33 +72,33 @@ order by `month`;
 
 -- 10.	Hiển thị thông tin tương ứng với từng hợp đồng thì đã sử dụng bao nhiêu dịch vụ đi kèm. 
 -- Kết quả hiển thị bao gồm ma_hop_dong, ngay_lam_hop_dong, ngay_ket_thuc, tien_dat_coc, so_luong_dich_vu_di_kem
--- (được tính dựa trên việc sum so_luong ở dich_vu_di_kem).
+-- (được tính dựa trên việc sum so_luong ở hop_dong_chi_tiet).
 SELECT
 	hd.ma_hop_dong,
 	hd.ngay_lam_hop_dong,
 	hd.ngay_ket_thuc,
 	hd.tien_dat_coc,
-	COUNT(dvk.ma_dich_vu_di_kem) so_luong
+	IFNULL(SUM(hct.so_luong),0) so_luong
 FROM hop_dong hd LEFT JOIN hop_dong_chi_tiet hct ON hd.ma_hop_dong = hct.ma_hop_dong
 				 LEFT JOIN dich_vu_di_kem dvk on hct.ma_dich_vu_di_kem = dvk.ma_dich_vu_di_kem
 GROUP BY hd.ma_hop_dong;
 
 -- 11.	Hiển thị thông tin các dịch vụ đi kèm đã được sử dụng bởi những khách hàng có ten_loai_khach là “Diamond” và có dia_chi ở “Vinh” 
 -- hoặc “Quảng Ngãi”.
-SELECT kh.ho_ten, dvk.ten_dich_vu_di_kem, dvk.gia
+SELECT dvk.ma_dich_vu_di_kem, dvk.ten_dich_vu_di_kem, dvk.gia
 FROM dich_vu dv
 	JOIN hop_dong hd ON hd.ma_dich_vu = dv.ma_dich_vu
 	JOIN hop_dong_chi_tiet hct ON hd.ma_hop_dong = hct.ma_hop_dong
 	JOIN dich_vu_di_kem dvk ON hct.ma_dich_vu_di_kem = dvk.ma_dich_vu_di_kem
 	JOIN khach_hang kh ON kh.ma_khach_hang = hd.ma_khach_hang
 	JOIN loai_khach lk ON kh.ma_loai_khach = lk.ma_loai_khach
-WHERE lk.ten_loai_khach = 'Diamond' AND kh.dia_chi in('Vinh', 'Quảng Ngãi');
+WHERE lk.ten_loai_khach = 'Diamond' AND (kh.dia_chi like '%Vinh%' or kh.dia_chi like '%Quang Ngai%');
 
 -- 12.	Hiển thị thông tin ma_hop_dong, ho_ten (nhân viên), ho_ten (khách hàng), so_dien_thoai (khách hàng), ten_dich_vu, 
 -- so_luong_dich_vu_di_kem (được tính dựa trên việc sum so_luong ở dich_vu_di_kem), 
 -- tien_dat_coc của tất cả các dịch vụ đã từng được khách hàng đặt vào 3 tháng cuối năm 2020 nhưng chưa từng được 
 -- khách hàng đặt vào 6 tháng đầu năm 2021.
-SELECT hd.ma_hop_dong, nv.ho_ten, kh.ho_ten, kh.so_dien_thoai, dvk.ten_dich_vu_di_kem, sum(dvk.ma_dich_vu_di_kem) as so_luong, hd.tien_dat_coc
+SELECT hd.ma_hop_dong, nv.ho_ten, kh.ho_ten, kh.so_dien_thoai, dv.ten_dich_vu, sum(hd.tien_dat_coc) tong_tien_coc, sum(hct.so_luong) so_luong_dich_vu_di_kem
 FROM dich_vu dv
 	JOIN hop_dong hd ON hd.ma_dich_vu = dv.ma_dich_vu
 	JOIN nhan_vien nv ON nv.ma_nhan_vien = hd.ma_nhan_vien
@@ -102,10 +110,15 @@ GROUP BY hd.ma_hop_dong;
 
 -- 13.	Hiển thị thông tin các Dịch vụ đi kèm được sử dụng nhiều nhất bởi các Khách hàng đã đặt phòng. 
 -- (Lưu ý là có thể có nhiều dịch vụ có số lần sử dụng nhiều như nhau).
-SELECT dvk.ten_dich_vu_di_kem, count(*) AS amount
-FROM dich_vu_di_kem dvk JOIN hop_dong_chi_tiet hct ON dvk.ma_dich_vu_di_kem = hct.ma_dich_vu_di_kem
-GROUP BY dvk.ten_dich_vu_di_kem
-order by amount desc;
+create view count_used 
+AS 
+SELECT ma_dich_vu_di_kem, ten_dich_vu_di_kem, sum(hct.so_luong) tong_so_luong_dvdk
+FROM dich_vu_di_kem JOIN hop_dong_chi_tiet hct USING(ma_dich_vu_di_kem)
+GROUP by ma_dich_vu_di_kem;
+
+SELECT ma_dich_vu_di_kem, ten_dich_vu_di_kem, tong_so_luong_dvdk
+FROM count_used
+WHERE tong_so_luong_dvdk = (SELECT max(tong_so_luong_dvdk) FROM count_used);
 
 -- 14.	Hiển thị thông tin tất cả các Dịch vụ đi kèm chỉ mới được sử dụng một lần duy nhất. 
 -- Thông tin hiển thị bao gồm ma_hop_dong, ten_loai_dich_vu, ten_dich_vu_di_kem, so_lan_su_dung (được tính dựa trên việc count các ma_dich_vu_di_kem).
@@ -136,7 +149,7 @@ WHERE NOT EXISTS (SELECT *
 UPDATE khach_hang
 SET ma_loai_khach = 1
 WHERE ma_khach_hang in (SELECT tmp.ma_khach_hang 
-					    FROM (SELECT DISTINCT kh.ma_khach_hang, sum(dv.chi_phi_thue + dvk.gia * hct.so_luong) AS tong_tien 
+					    FROM (SELECT DISTINCT kh.ma_khach_hang, (sum(dvk.gia * hct.so_luong) + dv.chi_phi_thue) AS tong_tien 
 								FROM khach_hang kh
 									JOIN hop_dong hd ON hd.ma_khach_hang = kh.ma_khach_hang
 									JOIN dich_vu dv ON hd.ma_dich_vu = dv.ma_dich_vu
