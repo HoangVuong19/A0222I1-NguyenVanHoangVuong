@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c799bd5-e335-486f-971e-9183a74dadd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/module3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss06_css/bai_tap/bai_dinh_dang_van_ban_css/dinh_dang_van_ban_css.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss06_css/bai_tap/bai_dinh_dang_van_ban_css/styles2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss06_css/bai_tap/bai_nhung_css/nhung_css_vao_html.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss06_css/bai_tap/bai_nhung_css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss06_css/bai_tap/bai_tao_trang_doc_truyen/fun.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss06_css/bai_tap/bai_tao_trang_doc_truyen/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss06_css/bai_tap/bai_tao_trang_doc_truyen/styles3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss06_css/thuc_hanh/bai_su_dung_css/bai_su_dung_css.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../module2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +25,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -47,6 +37,9 @@
       <option name="presentableId" value="Default" />
       <updated>1659511253412</updated>
       <workItem from="1659511255533" duration="303000" />
+      <workItem from="1659515575579" duration="18000" />
+      <workItem from="1659515621505" duration="10000" />
+      <workItem from="1659523816525" duration="609000" />
     </task>
     <servers />
   </component>
@@ -63,5 +56,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
