@@ -7,9 +7,6 @@
 body{
     font-family: Arial, Tahoma;
     font-size: 15px;
-}
-
-#main{
     width: 1000px;
 }
 
@@ -21,7 +18,7 @@ body{
 }
 
 #header-link{
-    height: 30px;
+    height: 50px;
     background: skyblue;
     border: 1px solid black;
     margin-bottom: 5px;
@@ -63,4 +60,41 @@ body{
     clear: both;
 }
 
+#header-link li {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    list-style: none;
+    float: left;
+}
 
+#header-link li a{
+    width: 100px;
+    height: 48px;
+    padding-top: 15px;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+    display: block;
+}
+
+#header-link ul ul{
+    position: absolute;
+    top: 50px;
+    width: 180px;
+    background: white;
+    visibility: hidden; /* ẩn thông tin */
+}
+
+#header-link ul ul li a{
+    width: 180px;
+    text-align: left;
+}
+
+#header-link li a:hover{
+    background-color: burlywood;
+}
+
+#header-link ul li:hover ul{
+    visibility: visible;
+}
