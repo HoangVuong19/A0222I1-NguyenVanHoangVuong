@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator" />
     <file type="web" url="file://$PROJECT_DIR$/ss09_web_overview/demo" />
     <file type="web" url="file://$PROJECT_DIR$/ss09_web_overview/thuc_hanh" />
   </component>

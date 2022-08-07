@@ -20,9 +20,8 @@ public class TranslationServlet extends HttpServlet {
         dictionary.put("computer", "May tinh");
 
         String search = request.getParameter("txtSearch");
-
+        response.setContentType("text/html");
         PrintWriter writer = response.getWriter();
-        writer.println("<html>");
 
         String result = dictionary.get(search);
         if(result != null){
@@ -31,6 +30,5 @@ public class TranslationServlet extends HttpServlet {
         } else {
             writer.println("Not found");
         }
-        writer.println("</html>");
     }
 }

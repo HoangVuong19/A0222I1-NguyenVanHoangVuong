@@ -15,8 +15,8 @@ public class LoginServlet extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
+        response.setContentType("text/html");
         PrintWriter writer = response.getWriter();
-        writer.println("<html>");
 
         if ("admin".equals(username) && "admin".equals(password)) {
             RequestDispatcher requestDispatcher = request.getRequestDispatcher("converter.jsp");
@@ -27,7 +27,5 @@ public class LoginServlet extends HttpServlet {
         } else {
             writer.println("<h1>Login Error</h1>");
         }
-
-        writer.println("</html>");
     }
 }

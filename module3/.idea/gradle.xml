@@ -5,6 +5,15 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary" />
         <option name="modules">
           <set>

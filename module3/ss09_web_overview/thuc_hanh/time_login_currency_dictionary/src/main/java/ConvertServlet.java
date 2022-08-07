@@ -16,11 +16,12 @@ public class ConvertServlet extends HttpServlet {
 
         float vnd = rate * usd;
 
+        response.setContentType("text/html");
         PrintWriter writer = response.getWriter();
-        writer.println("<html>");
+
         writer.println("<h1>Rate: " + rate + "</h1>");
         writer.println("<h1>USD: " + usd + "</h1>");
         writer.println("<h1>VND: " + vnd + "</h1>");
-        writer.println("</html>");
+
     }
 }
