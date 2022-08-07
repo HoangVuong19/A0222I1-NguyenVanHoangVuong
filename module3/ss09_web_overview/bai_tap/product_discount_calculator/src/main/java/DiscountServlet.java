@@ -13,12 +13,12 @@ public class DiscountServlet extends HttpServlet {
         float discount = Float.parseFloat(request.getParameter("discount"));
         int result = (int) (price * discount * 0.01);
 
+        response.setContentType("text/html");
         PrintWriter writer = response.getWriter();
-        writer.println("<html>");
+
         writer.println("<h1>Description: " + description + "</h1>");
         writer.println("<h1>Price: " + price + " $</h1>");
         writer.println("<h1>Discount: " + discount + " %</h1>");
         writer.println("<h1>Discount Amount: " + result + " $</h1>");
-        writer.println("</html>");
     }
 }
