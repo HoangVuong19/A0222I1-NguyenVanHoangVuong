@@ -62,32 +62,30 @@ body{
 
 #header-link li {
     position: relative;
-    width: 100px;
-    height: 50px;
     list-style: none;
     float: left;
 }
 
 #header-link li a{
     width: 100px;
-    height: 48px;
+    height: 50px;
     padding-top: 15px;
     text-decoration: none;
-    color: red;
-    text-align: center;
     display: block;
+    text-align: center;
+    color: red;
 }
 
 #header-link ul ul{
     position: absolute;
     top: 50px;
-    width: 180px;
+    width: 200px;
     background: white;
     visibility: hidden; /* ẩn thông tin */
 }
 
 #header-link ul ul li a{
-    width: 180px;
+    width: 200px;
     text-align: left;
 }
 
