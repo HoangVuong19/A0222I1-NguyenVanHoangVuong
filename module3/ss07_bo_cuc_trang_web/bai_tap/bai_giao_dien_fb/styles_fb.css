@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background: darkgrey;
+    height: 50px;
+}
+
+
+header .div-left {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+header .div-right {
+    flex: 2;
+    position: relative;
+
+}
+
+header div .one {
+    position: absolute;
+    right: 95px;
+    top: 15px;
+}
+
+header div .two {
+    position: absolute;
+    right: 70px;
+    top: 15px;
+}
+
+header div .three {
+    position: absolute;
+    right: 45px;
+    top: 15px;
+}
+
+header div .four {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+header nav{
+    flex: 6;
+    text-align: center;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline;
+    margin-right: 80px;
+}
+
+main{
+    display: flex;
+    height: 1000px;
+}
+
+.right{
+    flex: 3;
+    background: #6c757d;
+}
+
+content{
+    flex: 4;
+    background: black;
+}
+
+.left{
+    flex: 3;
+    background: #6c757d;
+}
