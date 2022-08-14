@@ -1,0 +1,22 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-item i {
+    margin-right: 15px;
+}
+
+.main {
+    margin-bottom: 15px;
+}
+
+footer {
+    background: black;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
