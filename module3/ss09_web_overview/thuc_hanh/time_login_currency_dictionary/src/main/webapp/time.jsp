@@ -4,8 +4,6 @@
     <title>Title</title>
 </head>
 <body>
-<h1>RATE: ${rate}</h1>
-<h1>USD: ${usd}</h1>
-<h1>VND: ${vnd}</h1>
+    <h1>Thời gian hiện tại là: <br> ${date}</h1>
 </body>
 </html>
