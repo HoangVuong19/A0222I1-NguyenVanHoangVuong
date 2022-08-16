@@ -2,12 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="currency" target="1.8" />
+      <module name="currency.main" target="1.8" />
+      <module name="currency.test" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="demo.main" target="1.8" />
       <module name="demo.test" target="1.8" />
+      <module name="dictionary" target="1.8" />
+      <module name="dictionary.main" target="1.8" />
+      <module name="dictionary.test" target="1.8" />
+      <module name="product_discount_calculator" target="1.8" />
+      <module name="product_discount_calculator.main" target="1.8" />
+      <module name="product_discount_calculator.test" target="1.8" />
       <module name="server-time" target="1.8" />
       <module name="server-time.main" target="1.8" />
       <module name="server-time.test" target="1.8" />
+      <module name="time_login_currency_dictionary" target="1.8" />
+      <module name="time_login_currency_dictionary.main" target="1.8" />
+      <module name="time_login_currency_dictionary.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
