@@ -5,19 +5,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c799bd5-e335-486f-971e-9183a74dadd5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-5.2.0/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/src/main/java/DiscountServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +121,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss09_web_overview/thuc_hanh/time_login_currency_dictionary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ss09_web_overview/bai_tap/product_discount_calculator" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -82,6 +141,7 @@
       <workItem from="1659523816525" duration="609000" />
       <workItem from="1660620173024" duration="689000" />
       <workItem from="1660620934098" duration="549000" />
+      <workItem from="1660621678902" duration="2756000" />
     </task>
     <servers />
   </component>

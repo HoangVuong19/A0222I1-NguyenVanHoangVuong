@@ -1,11 +1,14 @@
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+package com.example.product_discount_calculator;
+
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
+
 import java.io.IOException;
-import java.io.PrintWriter;
 
 @WebServlet(name = "DiscountServlet", value = "/display-discount")
 public class DiscountServlet extends HttpServlet {
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String description = request.getParameter("description");
@@ -13,12 +16,11 @@ public class DiscountServlet extends HttpServlet {
         float discount = Float.parseFloat(request.getParameter("discount"));
         int result = (int) (price * discount * 0.01);
 
-        response.setContentType("text/html");
-        PrintWriter writer = response.getWriter();
-
-        writer.println("<h1>Description: " + description + "</h1>");
-        writer.println("<h1>Price: " + price + " $</h1>");
-        writer.println("<h1>Discount: " + discount + " %</h1>");
-        writer.println("<h1>Discount Amount: " + result + " $</h1>");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("discount.jsp");
+        request.setAttribute("description", description);
+        request.setAttribute("price", price);
+        request.setAttribute("discount", discount);
+        request.setAttribute("result", result);
+        requestDispatcher.forward(request, response);
     }
 }
