@@ -37,12 +37,42 @@
             <td>${product.manufacture}</td>
             <td>
                 <a href="/product?action=edit&id=${product.id}" class="btn btn-primary">Edit</a>
-                <a href="/product?action=delete&id=${product.id}" class="btn btn-primary">Delete</a>
                 <a href="/product?action=detail&id=${product.id}" class="btn btn-primary">Detail</a>
+                <button type="button" onclick="deleteInfo('${product.id}','${product.name}')" class="btn btn-primary"
+                        data-bs-toggle="modal" data-bs-target="#modal1">
+                    Delete
+                </button>
             </td>
         </tr>
     </c:forEach>
-
 </table>
+
+<!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form action="/product?action=delete" method="post">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Modal title</h5>
+                    <input hidden name="id" id="deleteId">
+                </div>
+                <div class="modal-body">
+                    <span>Bạn có muốn xoá sản phẩm </span><span id="deleteName"></span><span> không?</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">OK</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function deleteInfo(id, name) {
+        document.getElementById("deleteId").value = id;
+        document.getElementById("deleteName").innerText = name;
+    }
+</script>
 </body>
 </html>

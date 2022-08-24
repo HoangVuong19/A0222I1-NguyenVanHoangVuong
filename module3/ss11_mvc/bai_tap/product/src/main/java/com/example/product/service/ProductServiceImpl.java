@@ -3,7 +3,9 @@ package com.example.product.service;
 import com.example.product.model.Product;
 import com.example.product.repository.ProductRepository;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ProductServiceImpl implements ProductService {
     private final ProductRepository productRepository = new ProductRepository();
@@ -15,11 +17,27 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public boolean saveProduct(Product product) {
+    public Map<String, String> saveProduct(Product product) {
         int id = products.get(products.size() - 1).getId() + 1;
         product.setId(id);
-        productRepository.add(product);
-        return true;
+
+        Map<String, String> map = new HashMap<>();
+        if (product.getPrice() < 0){
+            map.put("price", "price is not negative");
+        }
+        if (product.getName().equals("")){
+            map.put("name", "name is not null");
+        }
+        if (product.getDescription().equals("")){
+            map.put("description", "description is not null");
+        }
+        if (product.getManufacture().equals("")){
+            map.put("manufacture", "manufacture is not null");
+        }
+        if (map.isEmpty()){
+            productRepository.add(product);
+        }
+        return map;
     }
 
     @Override

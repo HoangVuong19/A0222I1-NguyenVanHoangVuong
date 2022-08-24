@@ -3,11 +3,12 @@ package com.example.product.service;
 import com.example.product.model.Product;
 
 import java.util.List;
+import java.util.Map;
 
 public interface ProductService {
     List<Product> getAllProducts();
 
-    boolean saveProduct(Product product);
+    Map<String, String> saveProduct(Product product);
 
     Product findProductById(int id);
 

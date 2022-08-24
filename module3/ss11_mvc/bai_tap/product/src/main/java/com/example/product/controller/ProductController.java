@@ -8,7 +8,9 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet(name = "ProductController", value = "/product")
 public class ProductController extends HttpServlet {
@@ -25,13 +27,10 @@ public class ProductController extends HttpServlet {
                 showFormCreate(request, response);
                 break;
             case "edit":
-                showFormEdit(request,response);
-                break;
-            case "delete":
-                deleteProduct(request,response);
+                showFormEdit(request, response);
                 break;
             case "detail":
-                showFormDetail(request,response);
+                showFormDetail(request, response);
                 break;
             default:
                 showHomePage(request, response);
@@ -44,18 +43,6 @@ public class ProductController extends HttpServlet {
         request.setAttribute("product", product);
         try {
             request.getRequestDispatcher("view/detail.jsp").forward(request, response);
-        } catch (ServletException | IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void deleteProduct(HttpServletRequest request, HttpServletResponse response) {
-        int id = Integer.parseInt(request.getParameter("id"));
-        productService.deleteProduct(id);
-        List<Product> productList = productService.getAllProducts();
-        request.setAttribute("productList", productList);
-        try {
-            request.getRequestDispatcher("view/home_page.jsp").forward(request,response);
         } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
@@ -103,6 +90,21 @@ public class ProductController extends HttpServlet {
             case "edit":
                 editProduct(request, response);
                 break;
+            case "delete":
+                deleteProduct(request, response);
+                break;
+        }
+    }
+
+    private void deleteProduct(HttpServletRequest request, HttpServletResponse response) {
+        int id = Integer.parseInt(request.getParameter("id"));
+        productService.deleteProduct(id);
+        List<Product> productList = productService.getAllProducts();
+        request.setAttribute("productList", productList);
+        try {
+            request.getRequestDispatcher("view/home_page.jsp").forward(request, response);
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -123,7 +125,7 @@ public class ProductController extends HttpServlet {
         List<Product> productList = productService.getAllProducts();
         request.setAttribute("productList", productList);
         try {
-            request.getRequestDispatcher("view/home_page.jsp").forward(request,response);
+            request.getRequestDispatcher("view/home_page.jsp").forward(request, response);
         } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
@@ -131,18 +133,24 @@ public class ProductController extends HttpServlet {
 
     private void addProduct(HttpServletRequest request, HttpServletResponse response) {
         String name = request.getParameter("name");
-        double price = Double.parseDouble(request.getParameter("price"));
+        String price = request.getParameter("price");
         String description = request.getParameter("description");
         String manufacture = request.getParameter("manufacture");
-        Product product = new Product(name, price, description, manufacture);
-        boolean check = productService.saveProduct(product);
-        String mess = "add new failed";
-        if (check){
-            mess = "successfully added new";
+        String mess = "";
+        if (price.equals("")){
+           mess = "add new failed";
+        } else {
+            Product product = new Product(name, Double.parseDouble(price), description, manufacture);
+            Map<String, String> map = productService.saveProduct(product);
+            if (map.isEmpty()) {
+                mess = "successfully added new";
+            } else {
+                request.setAttribute("error", map);
+            }
         }
         request.setAttribute("mess", mess);
         try {
-            request.getRequestDispatcher("view/create.jsp").forward(request,response);
+            request.getRequestDispatcher("view/create.jsp").forward(request, response);
         } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
