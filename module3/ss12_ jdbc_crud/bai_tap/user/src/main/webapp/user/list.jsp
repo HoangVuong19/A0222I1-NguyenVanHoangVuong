@@ -16,9 +16,14 @@
         <a href="/users?action=create">Add New User</a>
     </h2>
 </center>
+<div style="text-align: center">
+    <form action="/users?action=search" method="post">
+        <input type="text" name="search" placeholder="nameSearch" value="${character}">
+        <input type="submit" value="Search">
+    </form>
+</div>
 <div align="center">
     <table border="1" cellpadding="5">
-        <caption><h2>List of Users</h2></caption>
         <tr>
             <th>ID</th>
             <th>Name</th>

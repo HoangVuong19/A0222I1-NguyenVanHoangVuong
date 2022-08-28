@@ -78,6 +78,21 @@ public class UserController extends HttpServlet {
             case "delete":
                 deleteUser(request, response);
                 break;
+            case "search":
+                searchUser(request, response);
+                break;
+        }
+    }
+
+    private void searchUser(HttpServletRequest request, HttpServletResponse response) {
+        String character = request.getParameter("search");
+        List<User> userList = userService.searchByName(character);
+        request.setAttribute("character", character);
+        request.setAttribute("userList", userList);
+        try {
+            request.getRequestDispatcher("user/list.jsp").forward(request, response);
+        } catch (ServletException | IOException e) {
+            e.printStackTrace();
         }
     }
 

@@ -52,4 +52,9 @@ public class UserServiceImpl implements UserService{
     public boolean deleteUser(int id) {
         return iUserRepository.deleteUser(id);
     }
+
+    @Override
+    public List<User> searchByName(String character) {
+        return iUserRepository.searchUser(character);
+    }
 }

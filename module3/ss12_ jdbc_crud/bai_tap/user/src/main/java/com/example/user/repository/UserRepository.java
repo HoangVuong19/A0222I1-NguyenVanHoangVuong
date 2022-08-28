@@ -2,10 +2,7 @@ package com.example.user.repository;
 
 import com.example.user.model.User;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +12,7 @@ public class UserRepository implements IUserRepository {
     private final String SELECT_BY_ID = "select * from users where id = ?;";
     private final String UPDATE_BY_ID = "update users set `name` = ?, email = ?, country = ? where id = ?;";
     private final String DELETE_BY_ID = "delete from users where id = ?;";
+    private final String SEARCH_BY_NAME = "call search_by_name(?);";
 
     @Override
     public List<User> selectAllUsers() {
@@ -104,5 +102,27 @@ public class UserRepository implements IUserRepository {
             e.printStackTrace();
         }
         return rowDelete;
+    }
+
+    @Override
+    public List<User> searchUser(String character) {
+        List<User> userList = new ArrayList<>();
+        Connection connection = MySqlConnect.getConnectDB();
+        try {
+            CallableStatement callableStatement = connection.prepareCall(SEARCH_BY_NAME);
+            callableStatement.setString(1, character);
+            ResultSet resultSet = callableStatement.executeQuery();
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String email = resultSet.getString("email");
+                String country = resultSet.getString("country");
+                User user = new User(id, name, email, country);
+                userList.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userList;
     }
 }
