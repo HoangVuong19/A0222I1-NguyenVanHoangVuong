@@ -57,4 +57,9 @@ public class UserServiceImpl implements UserService{
     public List<User> searchByName(String character) {
         return iUserRepository.searchUser(character);
     }
+
+    @Override
+    public List<User> sortByName() {
+        return iUserRepository.sortUser();
+    }
 }

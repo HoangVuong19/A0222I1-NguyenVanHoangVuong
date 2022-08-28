@@ -81,6 +81,22 @@ public class UserController extends HttpServlet {
             case "search":
                 searchUser(request, response);
                 break;
+            case "sort":
+                sortUser(request, response);
+                break;
+        }
+    }
+
+    private void sortUser(HttpServletRequest request, HttpServletResponse response) {
+        String sortBy = request.getParameter("sort");
+        if (sortBy.equals("country")){
+            List<User> userList = userService.sortByName();
+            request.setAttribute("userList", userList);
+            try {
+                request.getRequestDispatcher("user/list.jsp").forward(request, response);
+            } catch (ServletException | IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

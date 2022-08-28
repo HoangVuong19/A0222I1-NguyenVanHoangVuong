@@ -15,4 +15,6 @@ public interface IUserRepository {
     boolean deleteUser(int id);
 
     List<User> searchUser(String character);
+
+    List<User> sortUser();
 }

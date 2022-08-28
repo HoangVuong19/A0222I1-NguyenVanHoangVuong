@@ -13,6 +13,7 @@ public class UserRepository implements IUserRepository {
     private final String UPDATE_BY_ID = "update users set `name` = ?, email = ?, country = ? where id = ?;";
     private final String DELETE_BY_ID = "delete from users where id = ?;";
     private final String SEARCH_BY_NAME = "call search_by_name(?);";
+    private final String SORT_BY_COUNTRY = "select * from users order by country asc;";
 
     @Override
     public List<User> selectAllUsers() {
@@ -113,6 +114,27 @@ public class UserRepository implements IUserRepository {
             callableStatement.setString(1, character);
             ResultSet resultSet = callableStatement.executeQuery();
             while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String email = resultSet.getString("email");
+                String country = resultSet.getString("country");
+                User user = new User(id, name, email, country);
+                userList.add(user);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return userList;
+    }
+
+    @Override
+    public List<User> sortUser() {
+        Connection connection = MySqlConnect.getConnectDB();
+        List<User> userList = new ArrayList<>();
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(SORT_BY_COUNTRY);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
                 String email = resultSet.getString("email");

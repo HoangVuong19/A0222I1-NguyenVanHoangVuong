@@ -16,4 +16,6 @@ public interface UserService {
     boolean deleteUser(int id);
 
     List<User> searchByName(String character);
+
+    List<User> sortByName();
 }

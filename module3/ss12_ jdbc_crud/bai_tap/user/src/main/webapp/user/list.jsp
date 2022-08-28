@@ -8,6 +8,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
+    <style>
+        .fix {
+            display: flex;
+        }
+        .form1, .form2{
+            flex: 1;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 <center>
@@ -16,10 +25,18 @@
         <a href="/users?action=create">Add New User</a>
     </h2>
 </center>
-<div style="text-align: center">
-    <form action="/users?action=search" method="post">
+<div class="fix">
+    <form action="/users?action=search" method="post" class="form1">
         <input type="text" name="search" placeholder="nameSearch" value="${character}">
         <input type="submit" value="Search">
+    </form>
+
+    <form action="/users?action=sort" method="post" class="form2">
+        <select name="sort" id="sort">
+            <option value="country">Country</option>
+            <option value="name">Name</option>
+        </select>
+        <input type="submit" value="Sort">
     </form>
 </div>
 <div align="center">
