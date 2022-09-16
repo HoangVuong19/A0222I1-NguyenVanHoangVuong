@@ -70,7 +70,7 @@
                     </div>
                     <div class="col-sm-4">
                         <form action="/products?action=search" method="post">
-                            <input class="headers" type="text" name="search" value="${character}" placeholder="Search by Category">
+                            <input class="headers" type="text" name="search" value="${character}" placeholder="Search">
                             <input class="btn btn-primary headers" type="submit" value="Search">
                         </form>
                     </div>
