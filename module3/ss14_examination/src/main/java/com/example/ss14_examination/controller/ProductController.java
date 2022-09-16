@@ -96,7 +96,7 @@ public class ProductController extends HttpServlet {
 
     private void searchProduct(HttpServletRequest request, HttpServletResponse response) {
         String character = request.getParameter("search");
-        List<Product> productList = productService.searchByCategoryName(character);
+        List<Product> productList = productService.searchByName(character);
         List<Category> categoryList = categoryService.readAllCategories();
         request.setAttribute("productList", productList);
         request.setAttribute("categoryList", categoryList);

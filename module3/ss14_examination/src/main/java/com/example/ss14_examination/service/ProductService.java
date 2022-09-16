@@ -16,5 +16,5 @@ public interface ProductService {
 
     boolean deleteProductById(int id);
 
-    List<Product> searchByCategoryName(String character);
+    List<Product> searchByName(String character);
 }

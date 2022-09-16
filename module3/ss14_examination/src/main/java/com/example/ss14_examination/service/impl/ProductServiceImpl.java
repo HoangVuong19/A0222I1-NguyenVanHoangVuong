@@ -20,26 +20,26 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Map<String, String> addProduct(Product product) {
         Map<String, String> map = new HashMap<>();
-        if (product.getName().equals("")){
+        if (product.getName().equals("")) {
             map.put("name", "name is not null");
         }
-        if (product.getPrice() == -1){
+        if (product.getPrice() == -1) {
             map.put("price", "price is not null");
-        } else if (product.getPrice() < 0){
+        } else if (product.getPrice() < 0) {
             map.put("price", "price must not have negative value");
         }
-        if (product.getQuantity() == -1){
+        if (product.getQuantity() == -1) {
             map.put("quantity", "quantity is not null");
-        } else if (product.getQuantity() < 0){
+        } else if (product.getQuantity() < 0) {
             map.put("quantity", "quantity must not have negative value");
         }
-        if (product.getColor().equals("")){
+        if (product.getColor().equals("")) {
             map.put("color", "color is not null");
         }
-        if (product.getDescription().equals("")){
+        if (product.getDescription().equals("")) {
             map.put("description", "description is not null");
         }
-        if (map.isEmpty()){
+        if (map.isEmpty()) {
             productRepository.insertProduct(product);
         }
         return map;
@@ -61,7 +61,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Product> searchByCategoryName(String character) {
+    public List<Product> searchByName(String character) {
         return productRepository.searchProduct(character);
     }
 }

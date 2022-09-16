@@ -14,7 +14,7 @@ public class ProductRepositoryImpl implements ProductRepository {
     private final String SELECT_BY_ID = "select * from product where product_id = ?;";
     private final String UPDATE_BY_ID = "update product set product_name = ?, price = ?, quantity = ?, color = ?, `description` = ?, category_id = ? where product_id = ?;";
     private final String DELETE_BY_ID = "delete from product where product_id = ?;";
-    private final String SEARCH = "call search_by_category(?);";
+    private final String SEARCH = "call search_by_name(?);";
 
     @Override
     public List<Product> selectAllProducts() {
