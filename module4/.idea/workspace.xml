@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ff2992c-3828-4b50-a814-404aa4b7e8cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/config/FilterUTF8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/config/Validation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/controller/ContractController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/controller/CustomerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/model/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/model/Contract.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/repository/BookRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/repository/ContractRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/repository/CustomerRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/repository/connect/MySqlConnect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/repository/impl/BookRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/repository/impl/ContractRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/repository/impl/CustomerRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/service/BookService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/service/ContractService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/service/impl/ContractServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/classes/java/main/com/example/exam2/service/impl/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/libs/exam2-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/build/libs/exam3-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/exam3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss10_jsp_jstl/bai_tap/calculate/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss10_jsp_jstl/bai_tap/calculate/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss10_jsp_jstl/bai_tap/calculate/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss10_jsp_jstl/bai_tap/calculate/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss10_jsp_jstl/bai_tap/calculate/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss10_jsp_jstl/bai_tap/calculate/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss10_jsp_jstl/bai_tap/calculate/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/build/classes/java/main/com/example/product/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/build/classes/java/main/com/example/product/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/build/classes/java/main/com/example/product/repository/ProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/build/classes/java/main/com/example/product/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/build/classes/java/main/com/example/product/service/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/build/libs/product-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/bai_tap/product/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/7.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/build/classes/java/main/com/customer/controller/CustomerServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/build/classes/java/main/com/customer/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/build/classes/java/main/com/customer/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/build/classes/java/main/com/customer/service/CustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/classes/java/main/com/example/user/config/FilterUTF8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/classes/java/main/com/example/user/config/Validation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/classes/java/main/com/example/user/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/classes/java/main/com/example/user/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/classes/java/main/com/example/user/repository/IUserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/classes/java/main/com/example/user/repository/MySqlConnect.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/classes/java/main/com/example/user/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/classes/java/main/com/example/user/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/classes/java/main/com/example/user/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/libs/user-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/bai_tap/user/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/build/classes/java/main/com/example/usermanager/controller/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/build/classes/java/main/com/example/usermanager/dao/IUserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/build/classes/java/main/com/example/usermanager/dao/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/build/classes/java/main/com/example/usermanager/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/build/libs/user-manager-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss12_ jdbc_crud/thuc_hanh/user-manager/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/use_transaction/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/build/classes/java/main/com/example/user_callable/Servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/build/libs/user_callable-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss13_jdbc_transaction/bai_tap/user_callable/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/7.1.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/7.1.1/dependencies-accessors/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/7.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/7.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/7.1.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/7.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/7.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/7.1.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/controller/ProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/modal/Category.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/modal/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/repository/CategoryRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/repository/ProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/repository/impl/CategoryRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/repository/impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/service/CategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/service/impl/CategoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/classes/java/main/com/example/ss14_examination/service/impl/ProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/libs/ss14_examination-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module3/ss14_examination/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module3/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../module3/ss09_web_overview/bai_tap/product_discount_calculator/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module3/ss09_web_overview/bai_tap/product_discount_calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module3/ss09_web_overview/bai_tap/product_discount_calculator/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module3/ss09_web_overview/bai_tap/product_discount_calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module3/ss09_web_overview/bai_tap/product_discount_calculator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/../module3/ss11_mvc/thuc_hanh/customer/gradlew" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Et7iWxhbxyHTU42nvR9lsmPt97" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ff2992c-3828-4b50-a814-404aa4b7e8cb" name="Changes" comment="" />
+      <created>1663403154769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663403154769</updated>
+      <workItem from="1663403156144" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
