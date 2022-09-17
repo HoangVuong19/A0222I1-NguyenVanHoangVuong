@@ -2,7 +2,7 @@ package com.example.ss14_examination.repository.impl;
 
 import com.example.ss14_examination.modal.Category;
 import com.example.ss14_examination.repository.CategoryRepository;
-import com.example.ss14_examination.repository.connect.MySqlConnect;
+import com.example.ss14_examination.util.MySqlConnect;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

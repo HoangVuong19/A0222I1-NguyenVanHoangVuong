@@ -1,7 +1,7 @@
 package com.example.ss14_examination.repository.impl;
 
 import com.example.ss14_examination.modal.Product;
-import com.example.ss14_examination.repository.connect.MySqlConnect;
+import com.example.ss14_examination.util.MySqlConnect;
 import com.example.ss14_examination.repository.ProductRepository;
 
 import java.sql.*;

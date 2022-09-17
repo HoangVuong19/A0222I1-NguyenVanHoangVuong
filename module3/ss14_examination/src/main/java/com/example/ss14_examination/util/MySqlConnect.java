@@ -1,4 +1,4 @@
-package com.example.ss14_examination.repository.connect;
+package com.example.ss14_examination.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

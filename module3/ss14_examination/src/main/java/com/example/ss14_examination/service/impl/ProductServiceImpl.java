@@ -4,8 +4,8 @@ import com.example.ss14_examination.modal.Product;
 import com.example.ss14_examination.repository.ProductRepository;
 import com.example.ss14_examination.repository.impl.ProductRepositoryImpl;
 import com.example.ss14_examination.service.ProductService;
+import com.example.ss14_examination.util.Validation;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -19,26 +19,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Map<String, String> addProduct(Product product) {
-        Map<String, String> map = new HashMap<>();
-        if (product.getName().equals("")) {
-            map.put("name", "name is not null");
-        }
-        if (product.getPrice() == -1) {
-            map.put("price", "price is not null");
-        } else if (product.getPrice() < 0) {
-            map.put("price", "price must not have negative value");
-        }
-        if (product.getQuantity() == -1) {
-            map.put("quantity", "quantity is not null");
-        } else if (product.getQuantity() < 0) {
-            map.put("quantity", "quantity must not have negative value");
-        }
-        if (product.getColor().equals("")) {
-            map.put("color", "color is not null");
-        }
-        if (product.getDescription().equals("")) {
-            map.put("description", "description is not null");
-        }
+        Map<String, String> map = Validation.checkValidAdd(product);
         if (map.isEmpty()) {
             productRepository.insertProduct(product);
         }

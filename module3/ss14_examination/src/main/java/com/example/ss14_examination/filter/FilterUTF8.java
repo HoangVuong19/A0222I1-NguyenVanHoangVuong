@@ -1,4 +1,4 @@
-package com.example.ss14_examination.config;
+package com.example.ss14_examination.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
