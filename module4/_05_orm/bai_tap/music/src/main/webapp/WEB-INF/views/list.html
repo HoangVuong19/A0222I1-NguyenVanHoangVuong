@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+</head>
+<body>
+<h3>Product List</h3>
+<p>
+    <a th:href="@{/song/create}">
+        Add new song
+    </a>
+</p>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"></span>
+    </div>
+</div>
+<table id = "songs">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Artist</th>
+        <th>Kind</th>
+        <th>Link</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="s,status : ${songs}">
+        <td th:text="${status.count}"></td>
+        <td th:text="${s.getName()}"></td>
+        <td th:text="${s.getArtist()}"></td>
+        <td th:text="${s.getKind()}"></td>
+        <td><a th:href="@{${s.getLink()}}">link</a></td>
+        <td><a th:href="@{/song/{id}/edit(id=${s.getId()})}">edit</a></td>
+        <td>
+            <button th:onclick="deleteInfo([[${s.id}]], [[${s.name}]])" type="button" class="btn btn-danger"
+                    data-bs-toggle="modal" data-bs-target="#delete">
+                delete
+            </button>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="delete" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form method="post" action="/song/delete">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Modal title</h5>
+                    <input hidden name="id" id="deleteId">
+                </div>
+                <div class="modal-body">
+                    <span>Bạn có muốn xoá bài hát </span><span id="deleteName"></span><span> không?</span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">OK</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function deleteInfo(id, name) {
+        document.getElementById("deleteId").value = id;
+        document.getElementById("deleteName").innerText = name;
+    }
+</script>
+
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
