@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>View Student</h3>
+<p>
+    <a th:href="@{/student}">
+        Back to student list
+    </a>
+</p>
+<div id="detail">
+    <div>
+        <label>Name:</label>
+        <label th:text="${student.studentName}"></label>
+    </div>
+    <div>
+        <label>Age:</label>
+        <label th:text="${student.age}"></label>
+    </div>
+    <div>
+        <label>Class:</label>
+        <label th:text="${student.classRoom.className}"></label>
+    </div>
+</div>
+</body>
+</html>
