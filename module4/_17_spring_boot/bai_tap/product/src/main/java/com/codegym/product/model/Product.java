@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.sql.Date;
 
 @Getter
 @Setter
@@ -20,5 +21,6 @@ public class Product {
     private Double price;
     private String description;
     private String manufacturer;
+    private Date dateOfManufacture;
 }
 

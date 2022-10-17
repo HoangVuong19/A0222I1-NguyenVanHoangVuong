@@ -34,6 +34,7 @@
         <th>Price</th>
         <th>Description</th>
         <th>Manufacturer</th>
+        <th>Date Of Manufacture</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
@@ -45,6 +46,7 @@
         <td th:text="${p.price}"></td>
         <td th:text="${p.description}"></td>
         <td th:text="${p.manufacturer}"></td>
+        <td th:text="${#dates.format(p.dateOfManufacture, 'dd-MM-yyyy')}"></td>
         <td><a th:href="@{/product/{id}/edit(id=${p.id})}">edit</a></td>
         <td>
             <button th:onclick="deleteInfo([[${p.id}]], [[${p.name}]])" type="button" class="btn btn-danger"

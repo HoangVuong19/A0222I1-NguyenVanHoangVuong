@@ -22,7 +22,7 @@ public class ProductController {
     @GetMapping("")
     public String showList(Model model, @RequestParam(value = "page", defaultValue = "0")int page){
         // Sort sort = Sort.by("price").descending();
-        model.addAttribute("productList", productService.paging(PageRequest.of(page,1)));
+        model.addAttribute("productList", productService.paging(PageRequest.of(page,4)));
         return "list";
     }
 
