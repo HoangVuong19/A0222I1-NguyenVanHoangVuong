@@ -21,6 +21,10 @@
         <label th:text="${student.age}"></label>
     </div>
     <div>
+        <label>Date Of Birth:</label>
+        <label th:text="${#dates.format(student.dateOfBirth, 'dd-MM-yyyy')}"></label>
+    </div>
+    <div>
         <label>Class:</label>
         <label th:text="${student.classRoom.className}"></label>
     </div>
