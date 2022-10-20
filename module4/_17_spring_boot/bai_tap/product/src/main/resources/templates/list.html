@@ -9,14 +9,9 @@
         Add new product
     </a>
 <div style="display: flex; justify-content: left">
-    <form th:action="@{/product/searchByName}" method="post" style="margin-right: 5em">
+    <form th:action="@{/product}" method="get" style="margin-right: 5em">
         <input style="width: 120px; height: 30px" type="text" name="searchName" th:value="${name}">
         <button type="submit">Search by name</button>
-    </form>
-
-    <form th:action="@{/product/searchByManufacturer}" method="post">
-        <input style="width: 120px; height: 30px" type="text" name="searchManufacturer">
-        <button type="submit">Search by Manufacturer</button>
     </form>
 </div>
 
@@ -82,14 +77,14 @@
 <div style="text-align: center">
     <span>
         <a th:if="${productList.hasPrevious()}"
-           th:href="@{/product(page = ${productList.number - 1})}">Previous</a>
+           th:href="@{/product(page = ${productList.number - 1}, searchName = ${name})}">Previous</a>
     </span>
     <span th:each="pageNo: ${#numbers.sequence(0,productList.totalPages - 1)}">
-        <a th:href="@{/product(page = ${pageNo})}" th:text="${pageNo}"></a>
+        <a th:href="@{/product(page = ${pageNo}, searchName = ${name})}" th:text="${pageNo}"></a>
     </span>
     <span>
         <a th:if="${productList.hasNext()}"
-           th:href="@{/product(page = ${productList.number +1})}">Next</a>
+           th:href="@{/product(page = ${productList.number +1}, searchName = ${name})}">Next</a>
     </span>
 </div>
 

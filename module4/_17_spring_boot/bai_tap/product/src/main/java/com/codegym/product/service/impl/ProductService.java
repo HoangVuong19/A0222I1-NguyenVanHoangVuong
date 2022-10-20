@@ -17,13 +17,8 @@ public class ProductService implements IProductService {
     private ProductRepository productRepository;
 
     @Override
-    public List<Product> findAll() {
-        return productRepository.findAll();
-    }
-
-    @Override
-    public Page<Product> paging(Pageable pageable) {
-        return productRepository.findAll(pageable);
+    public Page<Product> paging(String search, Pageable pageable) {
+        return productRepository.findAllByNameContains(search, pageable);
     }
 
     @Override
@@ -39,15 +34,5 @@ public class ProductService implements IProductService {
     @Override
     public void deleteById(Long id) {
         productRepository.deleteById(id);
-    }
-
-    @Override
-    public List<Product> searchByName(String searchName) {
-        return productRepository.findAllByNameContains(searchName);
-    }
-
-    @Override
-    public List<Product> searchByManufacturer(String searchManufacturer) {
-        return productRepository.searchByManufacturer(searchManufacturer);
     }
 }
