@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <table class="table table-sm table-dark">
+        <tr>
+            <td>
+                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#createModal">Create</button>
+            </td>
+            <td>
+                <!--                <form class="d-flex" th:action="@{/}" method="GET">-->
+                <!--                    <input class="form-control me-2" type="text" name="searchName" placeholder="search by name"-->
+                <!--                           aria-label="Search" th:value="${name}">-->
+                <!--                    &lt;!&ndash;                    <input class="form-control me-2" type="search" name="class_search" placeholder="search by class name"&ndash;&gt;-->
+                <!--                    &lt;!&ndash;                           aria-label="Search">&ndash;&gt;-->
+                <!--                    <button class="btn btn-outline-info" type="submit">Search</button>-->
+                <!--                </form>-->
+            </td>
+        </tr>
+    </table>
+</nav>
+
+<div class="row">
+    <div class="col">
+    </div>
+    <div class="col-10">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>No.</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>StartDate</th>
+                <th>EndDate</th>
+                <th>Shelf</th>
+                <th>Category</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item,state:${contractList}">
+                <td><p th:text="${state.count}"></p></td>
+                <td><p th:text="${item.code}"></p></td>
+                <td><p th:text="${item.name}"></p></td>
+                <td><p th:text="${item.phone}"></p></td>
+                <td><p th:text="${item.email}"></p></td>
+                <td><p th:text="${#dates.format(item.startDate,'dd/MM/yyyy')}"></p></td>
+                <td><p th:text="${#dates.format(item.endDate,'dd/MM/yyyy')}"></p></td>
+                <td><p th:text="${item.shelf}"></p></td>
+                <td><p th:text="${item.category}"></p></td>
+                <td>
+                    <button th:onclick="showFormEdit([[${item.id}]],[[${item.code}]],[[${item.name}]],[[${item.phone}]],
+                    [[${item.email}]],[[${item.startDate}]],[[${item.endDate}]],[[${item.shelf}]],[[${item.category}]])"
+                            type="button"
+                            class="btn btn-outline-warning"
+                            data-bs-toggle="modal" data-bs-target="#editModal">
+                        <i class="fa-solid fa-highlighter"></i>
+                    </button>
+                    <button th:onclick="showFormDelete([[${item.id}]],[[${item.name}]])"
+                            type="button"
+                            class="btn btn-outline-warning"
+                            data-bs-toggle="modal" data-bs-target="#deleteModal">
+                        <i class="fa-solid fa-eraser"></i>
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <div class="col">
+    </div>
+</div>
+
+<!--create-->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="example1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="example1ModalLabel">Create Contract</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover">
+                    <tr>
+                        <td>Code</td>
+                        <td>
+                            <label>
+                                <input type="text" id="create-code">
+                                <span style="color: red" id="error-create-code"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <label>
+                                <input type="text" id="create-name">
+                                <span style="color: red" id="error-create-name"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>
+                            <label>
+                                <input type="text" id="create-phone">
+                                <span style="color: red" id="error-create-phone"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>
+                            <label>
+                                <input type="text" id="create-email">
+                                <span style="color: red" id="error-create-email"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Start Date</td>
+                        <td>
+                            <label>
+                                <input type="date" id="create-start">
+                                <span style="color: red" id="error-create-start"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>End Date</td>
+                        <td>
+                            <label>
+                                <input type="date" id="create-end">
+                                <span style="color: red" id="error-create-end"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shelf</td>
+                        <td>
+                            <label>
+                                <select id="create-shelf">
+                                    <option value=""> --</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <span style="color: red" id="error-create-shelf"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td>
+                            <label>
+                                <select id="create-category">
+                                    <option value=""> --</option>
+                                    <option value="giáo dục">giáo dục</option>
+                                    <option value="thúc đẩy">thúc đẩy</option>
+                                    <option value="khoa học">khoa học</option>
+                                </select>
+                                <span style="color: red" id="error-create-category"></span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="createButton">Create</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--edit-->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="example1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="example2ModalLabel">Edit Student</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input id="edit-id" type="hidden">
+                <input id="edit-phone" type="hidden">
+                <input id="edit-email" type="hidden">
+                <input id="edit-start" type="hidden">
+                <input id="edit-end" type="hidden">
+                <table class="table table-hover">
+                    <tr>
+                        <td>Code</td>
+                        <td>
+                            <label>
+                                <input type="text" id="edit-code">
+                                <span style="color: red" id="error-edit-code"></span>
+                            </label>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>
+                            <label>
+                                <input type="text" id="edit-name">
+                                <span style="color: red" id="error-edit-name"></span>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Shelf</td>
+                        <td>
+                            <label>
+                                <select id="edit-shelf">
+                                    <option value=""> --</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Category</td>
+                        <td>
+                            <label>
+                                <select id="edit-category">
+                                    <option value=""> --</option>
+                                    <option value="giáo dục">giáo dục</option>
+                                    <option value="thúc đẩy">thúc đẩy</option>
+                                    <option value="khoa học">khoa học</option>
+                                </select>
+                                <span style="color: red" id="edit-create-category"></span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="editButton">Edit Contract</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#createButton").on("click", function () {
+            createContract();
+        });
+        $("#editButton").on("click", function () {
+            editContract();
+        });
+        // $("#deleteButton").on("click", function () {
+        //     deleteStudent();
+        // });
+    });
+
+    function createContract() {
+        let code = $('#create-code').val();
+        let name = $('#create-name').val();
+        let phone = $('#create-phone').val();
+        let email = $('#create-email').val();
+        let startDate = $('#create-start').val();
+        let endDate = $('#create-end').val();
+        let shelf = $('#create-shelf').val();
+        let category = $('#create-category').val();
+        let data = {
+            code: code,
+            name: name,
+            phone: phone,
+            email: email,
+            startDate: startDate,
+            endDate: endDate,
+            shelf: shelf,
+            category: category
+        };
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "POST",
+            data: JSON.stringify(data),
+            url: "http://localhost:8080/api/create",
+            success: function () {
+                window.location = "http://localhost:8080/"
+            },
+            error: function (event) {
+                console.log(event)
+                if (event.status === 400) {
+                    document.getElementById("error-create-code").innerText = event.responseJSON.code === undefined ? "" : event.responseJSON.code
+                    document.getElementById("error-create-name").innerText = event.responseJSON.name === undefined ? "" : event.responseJSON.name
+                    document.getElementById("error-create-phone").innerText = event.responseJSON.phone === undefined ? "" : event.responseJSON.phone
+                    document.getElementById("error-create-email").innerText = event.responseJSON.email === undefined ? "" : event.responseJSON.email
+                    document.getElementById("error-create-start").innerText = event.responseJSON.startDate === undefined ? "" : event.responseJSON.startDate
+                    document.getElementById("error-create-end").innerText = event.responseJSON.endDate === undefined ? "" : event.responseJSON.endDate
+                    document.getElementById("error-create-shelf").innerText = event.responseJSON.shelf === undefined ? "" : event.responseJSON.shelf
+                    document.getElementById("error-create-category").innerText = event.responseJSON.category === undefined ? "" : event.responseJSON.category
+                }
+            }
+        });
+    }
+
+    function showFormEdit(id, code, name, phone, email, startDate, endDate, shelf, category) {
+        document.getElementById("edit-id").value = id;
+        document.getElementById("edit-code").value = code;
+        document.getElementById("edit-name").value = name;
+        document.getElementById("edit-phone").value = phone;
+        document.getElementById("edit-email").value = email;
+        document.getElementById("edit-start").value = startDate;
+        document.getElementById("edit-end").value = endDate;
+        document.getElementById("edit-code").value = code;
+        document.getElementById("edit-shelf").value = shelf;
+        document.getElementById("edit-category").value = category;
+    }
+
+    function editContract() {
+        let id = $('#edit-id').val();
+        let code = $('#edit-code').val();
+        let name = $('#edit-name').val();
+        let phone = $('#edit-phone').val();
+        let email = $('#edit-email').val();
+        let startDate = $('#edit-start').val();
+        let endDate = $('#edit-end').val();
+        let shelf = $('#edit-shelf').val();
+        let category = $('#edit-category').val();
+        let data = {
+            id: id,
+            code: code,
+            name: name,
+            phone: phone,
+            email: email,
+            startDate: startDate,
+            endDate: endDate,
+            shelf: shelf,
+            category: category
+        };
+        console.log(data)
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "PUT",
+            data: JSON.stringify(data),
+            url: "http://localhost:8080/api/edit",
+            success: function () {
+                window.location = "http://localhost:8080/"
+            },
+            error: function (event) {
+                console.log(event)
+            }
+        });
+    }
+</script>
+</body>
+</html>
